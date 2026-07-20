@@ -6,9 +6,9 @@ chapter: false
 pre: " <b> 5. </b> "
 ---
 
-# Deploying NodeJ2Car Auto Parts eCommerce System on AWS
+# Deploying J2Car AutoParts eCommerce System on AWS
 
-Welcome to the step-by-step hands-on Workshop guide for deploying the **NodeJ2Car** auto parts e-commerce system onto Amazon Web Services (AWS) cloud infrastructure. 
+Welcome to the step-by-step hands-on Workshop guide for deploying the **J2Car AutoParts** e-commerce system onto Amazon Web Services (AWS) cloud infrastructure. 
 
 The system leverages a modern containerized and serverless architecture designed for high availability (Multi-AZ), security, and cost efficiency.
 
@@ -19,7 +19,7 @@ The system leverages a modern containerized and serverless architecture designed
 ### Workshop Sections:
 
 1. **[Overview & AWS Architecture](5.1-overview/)**
-   * Introduction to NodeJ2Car system features and detail breakdown of AWS architectural tiers.
+   * Introduction to J2Car AutoParts system features and detail breakdown of AWS architectural tiers.
 2. **[VPC & Networking Setup](5.2-vpc-networking/)**
    * Provision VPC networks, configure Public/Private subnets across 2 AZs, Route Tables, and NAT Gateways.
 3. **[Provision DocumentDB & Redis](5.3-databases/)**

@@ -8,7 +8,7 @@ pre: " <b> 1. </b> "
 
 ### Tổng quan dự án
 
-Hệ thống NodeJ2Car được thiết kế theo mô hình Micro-services/Containerized chạy trên nền tảng điện toán đám mây Amazon Web Services (AWS), đảm bảo tính sẵn sàng cao (High Availability), bảo mật tuyệt đối và khả năng tự động mở rộng theo tải (Auto Scaling).
+Hệ thống J2Car AutoParts được thiết kế theo mô hình Micro-services/Containerized chạy trên nền tảng điện toán đám mây Amazon Web Services (AWS), đảm bảo tính sẵn sàng cao (High Availability), bảo mật tuyệt đối và khả năng tự động mở rộng theo tải (Auto Scaling).
 
 **Luồng xử lý chính:**
 * **Truy cập phía người dùng (Frontend):** Ứng dụng Single Page Application (SPA) React được biên dịch và lưu trữ trên Amazon S3 Web Bucket, phân phối toàn cầu qua Amazon CloudFront và bảo vệ bởi AWS WAF.

@@ -6,11 +6,11 @@ chapter: false
 pre: " <b> 2. </b> "
 ---
 
-# Nền tảng Thương mại Điện tử Phụ tùng Ô tô NodeJ2Car  
+# Nền tảng Thương mại Điện tử Phụ tùng Ô tô J2Car AutoParts  
 ## Giải pháp AWS Cloud tối ưu hóa hiệu năng, bảo mật và mở rộng linh hoạt  
 
 ### 1. Tóm tắt điều hành  
-Dự án **NodeJ2Car** xây dựng một hệ thống thương mại điện tử chuyên biệt cung cấp phụ tùng ô tô cao cấp. Nền tảng nổi bật với ba tính năng đột phá: Bản vẽ sơ đồ xe tương tác 2D trực quan, Chat hỗ trợ trực tuyến thời gian thực qua WebSockets và Tìm kiếm phụ tùng lỗi bằng hình ảnh quét AI. Để đáp ứng nhu cầu giao dịch trực tuyến chịu tải lớn, bảo mật tuyệt đối thông tin khách hàng và xử lý thanh toán bất đồng bộ tin cậy (Momo, VNPay, Stripe), toàn bộ hệ thống được triển khai trên đám mây AWS theo mô hình hybrid container-serverless. Giải pháp này giúp NodeJ2Car đạt độ sẵn sàng cao (High Availability), tự động mở rộng theo tải (Auto Scaling) và giảm thiểu tối đa chi phí vận hành thực tế.
+Dự án **J2Car AutoParts** xây dựng một hệ thống thương mại điện tử chuyên biệt cung cấp phụ tùng ô tô cao cấp. Nền tảng nổi bật với ba tính năng đột phá: Bản vẽ sơ đồ xe tương tác 2D trực quan, Chat hỗ trợ trực tuyến thời gian thực qua WebSockets và Tìm kiếm phụ tùng lỗi bằng hình ảnh quét AI. Để đáp ứng nhu cầu giao dịch trực tuyến chịu tải lớn, bảo mật tuyệt đối thông tin khách hàng và xử lý thanh toán bất đồng bộ tin cậy (Momo, VNPay, Stripe), toàn bộ hệ thống được triển khai trên đám mây AWS theo mô hình hybrid container-serverless. Giải pháp này giúp J2Car AutoParts đạt độ sẵn sàng cao (High Availability), tự động mở rộng theo tải (Auto Scaling) và giảm thiểu tối đa chi phí vận hành thực tế.
 
 ### 2. Tuyên bố vấn đề  
 *Vấn đề hiện tại*  

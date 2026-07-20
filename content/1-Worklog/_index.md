@@ -8,7 +8,7 @@ pre: " <b> 1. </b> "
 
 ### Project Overview
 
-The NodeJ2Car system is designed using a Microservices/Containerized architecture running on Amazon Web Services (AWS), ensuring High Availability, robust security, and Auto Scaling.
+The J2Car AutoParts system is designed using a Microservices/Containerized architecture running on Amazon Web Services (AWS), ensuring High Availability, robust security, and Auto Scaling.
 
 **Key Request Handling Flow:**
 * **Frontend Access:** The React Single Page Application (SPA) is compiled and hosted on an Amazon S3 Web Bucket, distributed globally via Amazon CloudFront, and protected by AWS WAF.

@@ -6,11 +6,11 @@ chapter: false
 pre: " <b> 2. </b> "
 ---
 
-# NodeJ2Car Auto Parts E-Commerce Platform  
+# J2Car AutoParts E-Commerce Platform  
 ## Optimized AWS Cloud Solution for Performance, Security, and Scalable Growth  
 
 ### 1. Executive Summary  
-The **NodeJ2Car** project builds a specialized e-commerce platform offering premium auto parts. The platform stands out with three breakthrough features: an interactive 2D schematic diagram explorer, real-time WebSocket chat support, and an AI-powered image scanner to detect damaged parts. To handle high traffic volumes, ensure strict security of user financial data, and process asynchronous payments reliably (Momo, VNPay, Stripe), the entire system is deployed on AWS using a hybrid container-serverless model. This solution enables high availability, automatic scaling, and minimal operational overhead for NodeJ2Car.
+The **J2Car AutoParts** project builds a specialized e-commerce platform offering premium auto parts. The platform stands out with three breakthrough features: an interactive 2D schematic diagram explorer, real-time WebSocket chat support, and an AI-powered image scanner to detect damaged parts. To handle high traffic volumes, ensure strict security of user financial data, and process asynchronous payments reliably (Momo, VNPay, Stripe), the entire system is deployed on AWS using a hybrid container-serverless model. This solution enables high availability, automatic scaling, and minimal operational overhead for J2Car AutoParts.
 
 ### 2. Problem Statement  
 *Current State Challenges:*  

@@ -83,8 +83,8 @@ AWS Community Day là sự kiện công nghệ quy mô lớn được tổ chứ
 
 ---
 
-### Ứng Dụng Thực Tế Vào Dự Án NodeJ2Car
-Kiến thức thu nhận từ sự kiện đã được tôi áp dụng trực tiếp vào việc thiết kế và triển khai backend cho dự án **NodeJ2Car**:
+### Ứng Dụng Thực Tế Vào Dự Án J2Car AutoParts
+Kiến thức thu nhận từ sự kiện đã được tôi áp dụng trực tiếp vào việc thiết kế và triển khai backend cho dự án **J2Car AutoParts**:
 1. **Kiến trúc bảo mật biên & CloudFront:** Triển khai React Frontend trên S3 và phân phối qua CloudFront CDN kết hợp AWS WAF và SSL/TLS (ACM) theo mô hình tối ưu hóa bảo mật và tốc độ đã học được ở Tuần 10.
 2. **Xử lý bất đồng bộ chịu tải cao:** Áp dụng mô hình tách biệt kết nối (decoupling) sử dụng hàng đợi Amazon SQS ở Tuần 8 để nhận log hóa đơn từ Webhook Lambda, tránh nghẽn máy chủ chính Express tương tự giải pháp xử lý giao dịch quy mô lớn của AWS.
 3. **Tối ưu hóa chức năng AI Scan Image:** Áp dụng phương pháp phân tích từ khóa và kiểm soát định dạng đầu ra cho chức năng quét ảnh phụ tùng ô tô để hạn chế sai sót từ mô hình AI ở Tuần 6.

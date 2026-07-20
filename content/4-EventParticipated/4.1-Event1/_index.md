@@ -83,8 +83,8 @@ AWS Community Day is a large-scale technology conference organized by the local 
 
 ---
 
-### Applying to NodeJ2Car Project
-The knowledge gained from the event was applied to the design and implementation of the **NodeJ2Car** backend system:
+### Applying to J2Car AutoParts Project
+The knowledge gained from the event was applied to the design and implementation of the **J2Car AutoParts** backend system:
 1. **Edge Security & CDN:** Deployed the React frontend to S3 and distributed it via CloudFront with ACM SSL/TLS certificates and AWS WAF edge protection as completed in Week 10.
 2. **Decoupled Asynchronous Processing:** Implemented Amazon SQS messaging queues at Week 8 to buffer and consume invoice webhooks, protecting the primary Express servers from spikes in traffic.
 3. **Optimizing AI Scan Image API:** Applied filename/metadata sanitization and structured regex validation bounds to the AI parts scanning endpoint at Week 6 to reduce AI misclassification errors.

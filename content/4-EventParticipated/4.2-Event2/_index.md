@@ -71,8 +71,8 @@ Swinburne Cloud Mastery 2026 is an inspiring technology event designed to connec
 
 ---
 
-### Applying to NodeJ2Car Project
-The insights gathered from Swinburne Cloud Mastery 2026 directly influenced our implementation of the **NodeJ2Car** project:
+### Applying to J2Car AutoParts Project
+The insights gathered from Swinburne Cloud Mastery 2026 directly influenced our implementation of the **J2Car AutoParts** project:
 1. **Robust Data Architecture:** Inspired by Cam Vinh Banh's talk on data challenges, we refined our database logic, adding DocumentDB Replica Nodes for read routing and deploying ElastiCache Redis to cache frequent API query paths.
 2. **Standardized Cloud Operations:** Khang Nguyen's session on real-world implementation encouraged us to refactor our ECS Fargate tasks and SQS workers, ensuring they follow AWS production standards for autoscaling and decoupled message queues.
 
