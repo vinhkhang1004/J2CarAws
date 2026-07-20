@@ -13,10 +13,10 @@ pre: " <b> 1.12. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| Wednesday | Optimize read queries at the codebase level and implement compound index strategies. | 21/07/2026 | 22/07/2026 | DB Query Tuning |
-| Thursday | Execute peak load tests sending thousands of checkout requests through SQS queue limits. | 23/07/2026 | 24/07/2026 | Load Testing Tools |
-| Friday | Provision secondary DocumentDB Replica Nodes and ElastiCache Redis replication partners across Availability Zones. | 27/07/2026 | 27/07/2026 | AWS Replication Setup |
-| Friday | Configure AWS CloudWatch status boards monitoring system resource utilization and deploy automated email alarms. | 27/07/2026 | 27/07/2026 | AWS CloudWatch Alerts |
+| Wednesday | Optimize read queries at the codebase level and implement compound index strategies. | 20/07/2026 | 21/07/2026 | DB Query Tuning |
+| Thursday | Execute peak load tests sending thousands of checkout requests through SQS queue limits. | 22/07/2026 | 23/07/2026 | Load Testing Tools |
+| Friday | Provision secondary DocumentDB Replica Nodes and ElastiCache Redis replication partners across Availability Zones. | 24/07/2026 | 24/07/2026 | AWS Replication Setup |
+| Friday | Configure AWS CloudWatch status boards monitoring system resource utilization and deploy automated email alarms. | 24/07/2026 | 24/07/2026 | AWS CloudWatch Alerts |
 
 ### Week 12 Achievements:
 * Read/write splitting implemented via DB replicas, reducing read response times by 40%.

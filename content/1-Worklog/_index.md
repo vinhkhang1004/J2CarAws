@@ -22,26 +22,26 @@ The J2Car AutoParts system is designed using a Microservices/Containerized archi
 
 Below is the detailed progress by week:
 
-**Week 1 (05/05/2026 - 11/05/2026):** [System Initialization & AWS Explore Basics](1.1-week1/)
+**Week 1 (05/05/2026 - 10/05/2026):** [Familiarize with the internship environment, work culture at FCAJ, and project workflows. Learn general AWS concepts, basic cloud services, and complete initial exercises to get comfortable with the technologies and workspace.](1.1-week1/)
 
-**Week 2 (12/05/2026 - 18/05/2026):** [Practical VPC, EC2 & Basic Databases](1.2-week2/)
+**Week 2 (11/05/2026 - 17/05/2026):** [Continue implementing small tasks and studying foundational AWS services including IAM, EC2, and S3. Understand resource management, data storage, and user permission configurations through basic hands-on labs.](1.2-week2/)
 
-**Week 3 (19/05/2026 - 25/05/2026):** [DynamoDB, CDN CloudFront & AWS Office Day (24/05)](1.3-week3/)
+**Week 3 (18/05/2026 - 24/05/2026):** [Work directly on-site at the office, continue studying AWS services, and perform practical exercises related to VPC, RDS, and CloudWatch to understand networking, databases, and system monitoring.](1.3-week3/)
 
-**Week 4 (26/05/2026 - 01/06/2026):** [Auto Scaling, DNS Route 53 & Security WAF/Secrets Manager](1.4-week4/)
+**Week 4 (25/05/2026 - 31/05/2026):** [Study advanced AWS configurations and complete hands-on labs covering Elastic Load Balancing (ALB), Auto Scaling, Route 53, Lambda, and container orchestration services like Amazon ECS. Understand cloud deployment architecture and system scalability.](1.4-week4/)
 
-**Week 5 (02/06/2026 - 08/06/2026):** [Serverless Lambda, SQS & AWS Office Day (07/06)](1.5-week5/)
+**Week 5 (01/06/2026 - 07/06/2026):** [Research business operations and the enterprise ecosystem. Study system design principles, security strategies, software architecture, and product development lifecycles in real-world environments through serverless and secure storage services.](1.5-week5/)
 
-**Week 6 (09/06/2026 - 15/06/2026):** [AI Image Scanning & Auto Parts Identification Algorithm Integration](1.6-week6/)
+**Week 6 (08/06/2026 - 14/06/2026):** [Begin business analysis and brainstorming for the hands-on project (Workshop). Analyze system requirements for the J2Car AutoParts e-commerce application, design core APIs, and implement the AI Scan Image feature to identify damaged auto parts.](1.6-week6/)
 
-**Week 7 (16/06/2026 - 22/06/2026):** [External Payment Gateways & Webhook (IPN) Integration](1.7-week7/)
+**Week 7 (15/06/2026 - 21/06/2026):** [Continue finalizing the analysis and system architecture of the J2Car AutoParts project. Integrate third-party payment gateways (Momo, VNPay, Stripe), implement secure Checksum hashing algorithms, and deploy AWS Lambda Serverless as a webhook IPN within a secure network tier.](1.7-week7/)
 
-**Week 8 (23/06/2026 - 29/06/2026):** [Transaction Processing Queue & Asynchronous Worker Construction](1.8-week8/)
+**Week 8 (22/06/2026 - 28/06/2026):** [Complete the system design for J2Car AutoParts, designing a decoupled payment flow using Amazon SQS queues. Develop a Backend Worker module to poll SQS messages, automate order processing, clear cart caches in Redis, trigger Nodemailer emails, and push real-time updates via Socket.io.](1.8-week8/)
 
-**Week 9 (30/06/2026 - 06/07/2026):** [Docker Containerization & ECS Fargate Deployment](1.9-week9/)
+**Week 9 (29/06/2026 - 05/07/2026):** [Start developing and containerizing the J2Car AutoParts Backend using Docker. Deploy and run serverless container tasks on Amazon ECS Fargate behind an ALB with Cookie Sticky Sessions to ensure stable WebSocket chat connections.](1.9-week9/)
 
-**Week 10 (07/07/2026 - 13/07/2026):** [Frontend Deployment, CDN Configuration & Web Application Firewall Setup](1.10-week10/)
+**Week 10 (06/07/2026 - 12/07/2026):** [Perform end-to-end deployment of J2Car AutoParts on AWS: host React SPA Frontend on S3 Web Hosting, distribute globally via CloudFront CDN over HTTPS, and assign AWS WAFv2 rulesets to block SQL Injection, XSS, and bot scans.](1.10-week10/)
 
-**Week 11 (14/07/2026 - 20/07/2026):** [Disaster Recovery Testing & High Availability Verification](1.11-week11/)
+**Week 11 (13/07/2026 - 19/07/2026):** [Execute functional and integration tests across the deployed J2Car AutoParts application. Simulate Availability Zone (AZ) failure scenarios to verify disaster recovery (DR) and automatic failover behaviors of the VPC, ECS Fargate, and DocumentDB databases.](1.11-week11/)
 
-**Week 12 (21/07/2026 - 27/07/2026):** [Performance Optimization, Database Scaling & System Monitoring](1.12-week12/)
+**Week 12 (20/07/2026 - 27/07/2026):** [Finalize the J2Car AutoParts project by performing peak load tests, verifying system functionalities, and optimizing database performance via MongoDB indexes and DocumentDB/Redis replica read routing. Set up CloudWatch charts and alarms for proactive resource monitoring.](1.12-week12/)

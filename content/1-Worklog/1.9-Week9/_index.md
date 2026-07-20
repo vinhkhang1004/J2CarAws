@@ -14,11 +14,11 @@ pre: " <b> 1.9. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| Monday | Write multi-stage Dockerfile to minimize container size for the Express Backend. | 30/06/2026 | 30/06/2026 | Docker Guide |
-| Tuesday | Push release images to Amazon ECR registry and specify ECS Task Definition settings. | 01/07/2026 | 01/07/2026 | AWS ECR & Task Definitions |
-| Wednesday | Configure Application Load Balancer (ALB) with Cookie Sticky Sessions for Socket.io traffic stability. | 02/07/2026 | 03/07/2026 | AWS ALB Documentation |
-| Thursday | Deploy ECS service running 2 Tasks Backend NodeJS in Private Subnet 1 and Private Subnet 2 across two different AZs. | 03/07/2026 | 04/07/2026 | AWS ECS Fargate Deploy |
-| Friday | Apply ECS Auto Scaling policies based on resource consumption and launch dual NAT Gateways. | 04/07/2026 | 04/07/2026 | AWS NAT Gateway & Scaling |
+| Monday | Write multi-stage Dockerfile to minimize container size for the Express Backend. | 29/06/2026 | 29/06/2026 | Docker Guide |
+| Tuesday | Push release images to Amazon ECR registry and specify ECS Task Definition settings. | 30/06/2026 | 30/06/2026 | AWS ECR & Task Definitions |
+| Wednesday | Configure Application Load Balancer (ALB) with Cookie Sticky Sessions for Socket.io traffic stability. | 01/07/2026 | 02/07/2026 | AWS ALB Documentation |
+| Thursday | Deploy ECS service running 2 Tasks Backend NodeJS in Private Subnet 1 and Private Subnet 2 across two different AZs. | 02/07/2026 | 03/07/2026 | AWS ECS Fargate Deploy |
+| Friday | Apply ECS Auto Scaling policies based on resource consumption and launch dual NAT Gateways. | 03/07/2026 | 03/07/2026 | AWS NAT Gateway & Scaling |
 
 ### Week 9 Achievements:
 * Production Docker image size optimized under 150MB and stored in ECR.

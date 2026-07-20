@@ -13,11 +13,11 @@ pre: " <b> 1.8. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| Thứ 2 | Khởi tạo hàng đợi Amazon SQS (Payment Queue) để làm trung gian lưu trữ giao dịch. | 23/06/2026 | 23/06/2026 | AWS SQS Console |
-| Thứ 3 | Viết mã nguồn từ hàm Lambda đẩy thông tin giao dịch thành công (hóa đơn sạch) vào SQS. | 24/06/2026 | 24/06/2026 | AWS SDK SQS publisher |
-| Thứ 4 | Phát triển mô-đun Worker trên Backend liên tục lắng nghe và polling tin nhắn từ hàng đợi SQS. | 25/06/2026 | 26/06/2026 | SQS Consumer Module |
-| Thứ 5 | Viết logic cập nhật trạng thái đơn hàng thành 'Đã thanh toán' trong DocumentDB và xóa cache giỏ hàng tương ứng trong Redis. | 26/06/2026 | 27/06/2026 | Order Management Docs |
-| Thứ 6 | Cấu hình gửi mail xác nhận tự động (Nodemailer) và bắn tín hiệu Socket.io realtime thông báo cho quản trị viên. | 27/06/2026 | 27/06/2026 | Nodemailer & Socket.io |
+| Thứ 2 | Khởi tạo hàng đợi Amazon SQS (Payment Queue) để làm trung gian lưu trữ giao dịch. | 22/06/2026 | 22/06/2026 | AWS SQS Console |
+| Thứ 3 | Viết mã nguồn từ hàm Lambda đẩy thông tin giao dịch thành công (hóa đơn sạch) vào SQS. | 23/06/2026 | 23/06/2026 | AWS SDK SQS publisher |
+| Thứ 4 | Phát triển mô-đun Worker trên Backend liên tục lắng nghe và polling tin nhắn từ hàng đợi SQS. | 24/06/2026 | 25/06/2026 | SQS Consumer Module |
+| Thứ 5 | Viết logic cập nhật trạng thái đơn hàng thành 'Đã thanh toán' trong DocumentDB và xóa cache giỏ hàng tương ứng trong Redis. | 25/06/2026 | 26/06/2026 | Order Management Docs |
+| Thứ 6 | Cấu hình gửi mail xác nhận tự động (Nodemailer) và bắn tín hiệu Socket.io realtime thông báo cho quản trị viên. | 26/06/2026 | 26/06/2026 | Nodemailer & Socket.io |
 
 ### Kết quả đạt được tuần 8:
 * Khởi tạo hàng đợi Amazon SQS hoạt động tốt giúp giảm tải, ngắt kết nối trực tiếp (Decoupling) giữa Webhook Lambda và Backend Server.

@@ -14,11 +14,11 @@ pre: " <b> 1.6. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| Monday | Build the `/api/upload/scan-image` API endpoint to collect uploaded images from clients. | 09/06/2026 | 09/06/2026 | Express Upload API |
-| Tuesday | Develop metadata, EXIF data, and filename parsing scripts to classify auto parts keywords. | 10/06/2026 | 11/06/2026 | Image Parsing Logic |
-| Wednesday | Construct database lookup requests to fetch alternative replacements matching the keywords. | 11/06/2026 | 12/06/2026 | DocumentDB Query Builders |
-| Thursday | Save scanning upload assets in Amazon S3 Media Bucket for diagnostics and testing. | 12/06/2026 | 13/06/2026 | AWS S3 Integration |
-| Friday | Perform end-to-end integration testing on image classification recommendations. | 13/06/2026 | 13/06/2026 | Feature Testing |
+| Monday | Build the `/api/upload/scan-image` API endpoint to collect uploaded images from clients. | 08/06/2026 | 08/06/2026 | Express Upload API |
+| Tuesday | Develop metadata, EXIF data, and filename parsing scripts to classify auto parts keywords. | 09/06/2026 | 10/06/2026 | Image Parsing Logic |
+| Wednesday | Construct database lookup requests to fetch alternative replacements matching the keywords. | 10/06/2026 | 11/06/2026 | DocumentDB Query Builders |
+| Thursday | Save scanning upload assets in Amazon S3 Media Bucket for diagnostics and testing. | 11/06/2026 | 12/06/2026 | AWS S3 Integration |
+| Friday | Perform end-to-end integration testing on image classification recommendations. | 12/06/2026 | 12/06/2026 | Feature Testing |
 
 ### Week 6 Achievements:
 * Finished the AI Scan Image endpoint pipeline.

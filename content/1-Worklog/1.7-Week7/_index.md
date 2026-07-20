@@ -13,11 +13,11 @@ pre: " <b> 1.7. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| Monday | Integrate payment libraries and write endpoint URL generator functions for VNPay, MoMo, and Stripe. | 16/06/2026 | 17/06/2026 | Payment Gateway Docs |
-| Tuesday | Implement validation logic verifying Checksums and payment keys received in callbacks. | 17/06/2026 | 18/06/2026 | Security Hash Guides |
-| Wednesday | Write serverless handler functions in Node.js for AWS Lambda. | 18/06/2026 | 19/06/2026 | AWS Lambda Nodejs |
-| Thursday | Deploy AWS Lambda into Private Subnet 5 (Integration Tier) to protect inside resources. | 19/06/2026 | 20/06/2026 | AWS Network Integration |
-| Friday | Perform simulated callback testing verifying payload integrity and response statuses. | 20/06/2026 | 20/06/2026 | Payment API Testing |
+| Monday | Integrate payment libraries and write endpoint URL generator functions for VNPay, MoMo, and Stripe. | 15/06/2026 | 16/06/2026 | Payment Gateway Docs |
+| Tuesday | Implement validation logic verifying Checksums and payment keys received in callbacks. | 16/06/2026 | 17/06/2026 | Security Hash Guides |
+| Wednesday | Write serverless handler functions in Node.js for AWS Lambda. | 17/06/2026 | 18/06/2026 | AWS Lambda Nodejs |
+| Thursday | Deploy AWS Lambda into Private Subnet 5 (Integration Tier) to protect inside resources. | 18/06/2026 | 19/06/2026 | AWS Network Integration |
+| Friday | Perform simulated callback testing verifying payload integrity and response statuses. | 19/06/2026 | 19/06/2026 | Payment API Testing |
 
 ### Week 7 Achievements:
 * Dynamic payment URL creation complete for Momo, VNPay, and Stripe.

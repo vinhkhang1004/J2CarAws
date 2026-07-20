@@ -16,10 +16,10 @@ pre: " <b> 1.3. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| Monday | Complete "NoSQL Database Essentials with Amazon DynamoDB" - Create tables and run scan/query operations. | 19/05/2026 | 19/05/2026 | DynamoDB Lab Guide |
-| Tuesday | Complete "In-Memory Caching with Amazon ElastiCache" - Setup Redis caches. | 20/05/2026 | 20/05/2026 | ElastiCache Lab Guide |
-| Wednesday | Complete "Content Delivery with Amazon CloudFront" - Deliver S3 static sites via CDN nodes. | 21/05/2026 | 21/05/2026 | CloudFront Lab Guide |
-| Thursday | Complete "Monitoring with Amazon CloudWatch" - Define metric alarm triggers. | 22/05/2026 | 22/05/2026 | CloudWatch Lab Guide |
+| Monday | Complete "NoSQL Database Essentials with Amazon DynamoDB" - Create tables and run scan/query operations. | 18/05/2026 | 18/05/2026 | DynamoDB Lab Guide |
+| Tuesday | Complete "In-Memory Caching with Amazon ElastiCache" - Setup Redis caches. | 19/05/2026 | 19/05/2026 | ElastiCache Lab Guide |
+| Wednesday | Complete "Content Delivery with Amazon CloudFront" - Deliver S3 static sites via CDN nodes. | 20/05/2026 | 20/05/2026 | CloudFront Lab Guide |
+| Thursday | Complete "Monitoring with Amazon CloudWatch" - Define metric alarm triggers. | 21/05/2026 | 21/05/2026 | CloudWatch Lab Guide |
 | Sunday | **AWS HCMC Office Visit (24/05/2026)**: Participate in HCMC office session focusing on VPC Security and Multi-VPC configurations. | 24/05/2026 | 24/05/2026 | AWS Office Training |
 
 ### Week 3 Achievements:

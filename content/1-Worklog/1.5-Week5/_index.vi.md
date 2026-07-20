@@ -16,10 +16,10 @@ pre: " <b> 1.5. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| Thứ 2 | Thực hành bài Lab "Serverless Automation with AWS Lambda" - Tạo Lambda function NodeJS và trigger. | 02/06/2026 | 02/06/2026 | AWS Lambda Guide |
-| Thứ 3 | Thực hành bài Lab "Messaging Systems with SQS and SNS" - Thiết lập hàng đợi đệm tin nhắn. | 03/06/2026 | 03/06/2026 | SQS/SNS Lab Guide |
-| Thứ 4 | Tìm hiểu về Containerization - Tạo Dockerfile, build image và vận hành Docker container cục bộ. | 04/06/2026 | 04/06/2026 | Docker documentation |
-| Thứ 5 | Thực hành bài Lab "Container Orchestration with Amazon ECS and AWS Fargate". | 05/06/2026 | 05/06/2026 | Amazon ECS Guide |
+| Thứ 2 | Thực hành bài Lab "Serverless Automation with AWS Lambda" - Tạo Lambda function NodeJS và trigger. | 01/06/2026 | 01/06/2026 | AWS Lambda Guide |
+| Thứ 3 | Thực hành bài Lab "Messaging Systems with SQS and SNS" - Thiết lập hàng đợi đệm tin nhắn. | 02/06/2026 | 02/06/2026 | SQS/SNS Lab Guide |
+| Thứ 4 | Tìm hiểu về Containerization - Tạo Dockerfile, build image và vận hành Docker container cục bộ. | 03/06/2026 | 03/06/2026 | Docker documentation |
+| Thứ 5 | Thực hành bài Lab "Container Orchestration with Amazon ECS and AWS Fargate". | 04/06/2026 | 04/06/2026 | Amazon ECS Guide |
 | Chủ Nhật | **Lên văn phòng AWS Việt Nam (07/06/2026)**: Học thực hành on-site nâng cao về quản lý chính sách IAM nâng cao và xác thực người dùng bằng Amazon Cognito. | 07/06/2026 | 07/06/2026 | AWS HCMC Office Training |
 
 ### Kết quả đạt được tuần 5:

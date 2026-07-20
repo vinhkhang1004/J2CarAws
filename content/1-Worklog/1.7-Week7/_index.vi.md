@@ -13,11 +13,11 @@ pre: " <b> 1.7. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| Thứ 2 | Tích hợp SDK và viết code sinh URL thanh toán VNPay, MoMo, Stripe dựa trên thông tin đơn hàng. | 16/06/2026 | 17/06/2026 | Payment Gateway Docs |
-| Thứ 3 | Xây dựng hàm băm bảo mật (Checksum) để xác thực chữ ký bảo mật do cổng thanh toán gửi về. | 17/06/2026 | 18/06/2026 | Security Hash Guides |
-| Thứ 4 | Viết mã nguồn cho hàm AWS Lambda xử lý Webhook IPN bằng Node.js. | 18/06/2026 | 19/06/2026 | AWS Lambda Nodejs |
-| Thứ 5 | Triển khai hàm Lambda tại Private Subnet 5 (Integration Tier) bảo mật cao để cô lập luồng nhận webhook. | 19/06/2026 | 20/06/2026 | AWS Network Integration |
-| Thứ 6 | Kiểm thử liên kết luồng gọi webhook IPN giả lập từ các nhà cung cấp dịch vụ thanh toán. | 20/06/2026 | 20/06/2026 | Payment API Testing |
+| Thứ 2 | Tích hợp SDK và viết code sinh URL thanh toán VNPay, MoMo, Stripe dựa trên thông tin đơn hàng. | 15/06/2026 | 16/06/2026 | Payment Gateway Docs |
+| Thứ 3 | Xây dựng hàm băm bảo mật (Checksum) để xác thực chữ ký bảo mật do cổng thanh toán gửi về. | 16/06/2026 | 17/06/2026 | Security Hash Guides |
+| Thứ 4 | Viết mã nguồn cho hàm AWS Lambda xử lý Webhook IPN bằng Node.js. | 17/06/2026 | 18/06/2026 | AWS Lambda Nodejs |
+| Thứ 5 | Triển khai hàm Lambda tại Private Subnet 5 (Integration Tier) bảo mật cao để cô lập luồng nhận webhook. | 18/06/2026 | 19/06/2026 | AWS Network Integration |
+| Thứ 6 | Kiểm thử liên kết luồng gọi webhook IPN giả lập từ các nhà cung cấp dịch vụ thanh toán. | 19/06/2026 | 19/06/2026 | Payment API Testing |
 
 ### Kết quả đạt được tuần 7:
 * APIs sinh link thanh toán hoạt động tốt trên cả Momo, VNPay, Stripe.

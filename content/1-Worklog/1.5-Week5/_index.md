@@ -16,10 +16,10 @@ pre: " <b> 1.5. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| Monday | Complete "Serverless Automation with AWS Lambda" - Setup Node.js lambda execution triggers. | 02/06/2026 | 02/06/2026 | AWS Lambda Guide |
-| Tuesday | Complete "Messaging Systems with SQS and SNS" - Setup buffer queues and messaging topics. | 03/06/2026 | 03/06/2026 | SQS/SNS Lab Guide |
-| Wednesday | Complete Docker basics - Construct Dockerfiles, compile images, and verify container runs locally. | 04/06/2026 | 04/06/2026 | Docker Documentation |
-| Thursday | Complete "Container Orchestration with Amazon ECS and AWS Fargate" - Launch serverless container tasks. | 05/06/2026 | 05/06/2026 | Amazon ECS Guide |
+| Monday | Complete "Serverless Automation with AWS Lambda" - Setup Node.js lambda execution triggers. | 01/06/2026 | 01/06/2026 | AWS Lambda Guide |
+| Tuesday | Complete "Messaging Systems with SQS and SNS" - Setup buffer queues and messaging topics. | 02/06/2026 | 02/06/2026 | SQS/SNS Lab Guide |
+| Wednesday | Complete Docker basics - Construct Dockerfiles, compile images, and verify container runs locally. | 03/06/2026 | 03/06/2026 | Docker Documentation |
+| Thursday | Complete "Container Orchestration with Amazon ECS and AWS Fargate" - Launch serverless container tasks. | 04/06/2026 | 04/06/2026 | Amazon ECS Guide |
 | Sunday | **AWS HCMC Office Visit (07/06/2026)**: Participate in advanced HCMC office training covering IAM policies and Cognito identity authentication. | 07/06/2026 | 07/06/2026 | AWS HCMC Office Session |
 
 ### Week 5 Achievements:

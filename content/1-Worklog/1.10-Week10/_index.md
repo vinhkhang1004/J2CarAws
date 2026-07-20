@@ -14,11 +14,11 @@ pre: " <b> 1.10. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| Monday | Build React SPA to static assets and upload to S3 Web Bucket with Static Hosting mode active. | 07/07/2026 | 07/07/2026 | React Build & S3 Hosting |
-| Tuesday | Update CORS variables on the Express backend server to accept requests only from the official domain. | 08/07/2026 | 08/07/2026 | Express CORS Docs |
-| Wednesday | Generate ACM SSL certificate and create Amazon CloudFront CDN Distribution referencing S3 Bucket. | 09/07/2026 | 10/07/2026 | AWS ACM & CloudFront |
-| Thursday | Provision AWS WAF Web ACL rules in front of CloudFront CDN and ALB. | 10/07/2026 | 11/07/2026 | AWS WAF Ruleset |
-| Friday | Configure security rules against SQL Injection, XSS exploits, and DDoS vectors. | 11/07/2026 | 11/07/2026 | OWASP Top 10 WAF |
+| Monday | Build React SPA to static assets and upload to S3 Web Bucket with Static Hosting mode active. | 06/07/2026 | 06/07/2026 | React Build & S3 Hosting |
+| Tuesday | Update CORS variables on the Express backend server to accept requests only from the official domain. | 07/07/2026 | 07/07/2026 | Express CORS Docs |
+| Wednesday | Generate ACM SSL certificate and create Amazon CloudFront CDN Distribution referencing S3 Bucket. | 08/07/2026 | 09/07/2026 | AWS ACM & CloudFront |
+| Thursday | Provision AWS WAF Web ACL rules in front of CloudFront CDN and ALB. | 09/07/2026 | 10/07/2026 | AWS WAF Ruleset |
+| Friday | Configure security rules against SQL Injection, XSS exploits, and DDoS vectors. | 10/07/2026 | 10/07/2026 | OWASP Top 10 WAF |
 
 ### Week 10 Achievements:
 * React SPA client assets hosted on S3 and distributed via CloudFront CDN distribution with minimal load time.

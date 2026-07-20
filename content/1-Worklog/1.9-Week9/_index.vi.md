@@ -14,11 +14,11 @@ pre: " <b> 1.9. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| Thứ 2 | Viết Dockerfile sử dụng multi-stage build để tối thiểu dung lượng container image cho Backend Express. | 30/06/2026 | 30/06/2026 | Docker Guide |
-| Thứ 3 | Đẩy Docker image lên Amazon ECR và viết tệp cấu hình ECS Task Definitions (CPU, RAM, ENV Variables). | 01/07/2026 | 01/07/2026 | AWS ECR & Task Definitions |
-| Thứ 4 | Cấu hình Application Load Balancer (ALB) hỗ trợ Sticky Sessions để Socket.io hoạt động ổn định. | 02/07/2026 | 03/07/2026 | AWS ALB Documentation |
-| Thứ 5 | Triển khai dịch vụ ECS, chạy 2 Tasks Backend NodeJS ở Private Subnet 1 và Private Subnet 2 trên 2 AZs khác nhau. | 03/07/2026 | 04/07/2026 | AWS ECS Fargate Deploy |
-| Thứ 6 | Thiết lập chính sách ECS Auto Scaling (scale-out khi CPU > 70%) và cấu hình 2 NAT Gateways phục vụ outbound traffic. | 04/07/2026 | 04/07/2026 | AWS NAT Gateway & Scaling |
+| Thứ 2 | Viết Dockerfile sử dụng multi-stage build để tối thiểu dung lượng container image cho Backend Express. | 29/06/2026 | 29/06/2026 | Docker Guide |
+| Thứ 3 | Đẩy Docker image lên Amazon ECR và viết tệp cấu hình ECS Task Definitions (CPU, RAM, ENV Variables). | 30/06/2026 | 30/06/2026 | AWS ECR & Task Definitions |
+| Thứ 4 | Cấu hình Application Load Balancer (ALB) hỗ trợ Sticky Sessions để Socket.io hoạt động ổn định. | 01/07/2026 | 02/07/2026 | AWS ALB Documentation |
+| Thứ 5 | Triển khai dịch vụ ECS, chạy 2 Tasks Backend NodeJS ở Private Subnet 1 và Private Subnet 2 trên 2 AZs khác nhau. | 02/07/2026 | 03/07/2026 | AWS ECS Fargate Deploy |
+| Thứ 6 | Thiết lập chính sách ECS Auto Scaling (scale-out khi CPU > 70%) và cấu hình 2 NAT Gateways phục vụ outbound traffic. | 03/07/2026 | 03/07/2026 | AWS NAT Gateway & Scaling |
 
 ### Kết quả đạt được tuần 9:
 * Container Backend được đóng gói nhỏ gọn (< 150MB) và lưu trữ bảo mật trên ECR.

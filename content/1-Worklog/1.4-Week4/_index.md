@@ -16,11 +16,11 @@ pre: " <b> 1.4. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| Monday | Complete "Scaling Applications with EC2 Auto Scaling" and configure ALB targets. | 26/05/2026 | 26/05/2026 | Auto Scaling Guide |
-| Tuesday | Complete "Hybrid DNS Management with Amazon Route 53" - Create hosted zones and records. | 27/05/2026 | 27/05/2026 | Route 53 Guide |
-| Wednesday | Complete "Private Access to S3 with VPC Endpoints" - Setup VPC S3 Gateway Endpoints. | 28/05/2026 | 28/05/2026 | S3 Endpoint Guide |
-| Thursday | Complete "Application Protection with AWS WAF" - Attach Web ACL filtering criteria. | 29/05/2026 | 29/05/2026 | AWS WAF Lab Guide |
-| Friday | Complete "Credentials Management with AWS Secrets Manager" - Deploy encrypted secret key records. | 30/05/2026 | 30/05/2026 | Secrets Manager Guide |
+| Monday | Complete "Scaling Applications with EC2 Auto Scaling" and configure ALB targets. | 25/05/2026 | 25/05/2026 | Auto Scaling Guide |
+| Tuesday | Complete "Hybrid DNS Management with Amazon Route 53" - Create hosted zones and records. | 26/05/2026 | 26/05/2026 | Route 53 Guide |
+| Wednesday | Complete "Private Access to S3 with VPC Endpoints" - Setup VPC S3 Gateway Endpoints. | 27/05/2026 | 27/05/2026 | S3 Endpoint Guide |
+| Thursday | Complete "Application Protection with AWS WAF" - Attach Web ACL filtering criteria. | 28/05/2026 | 28/05/2026 | AWS WAF Lab Guide |
+| Friday | Complete "Credentials Management with AWS Secrets Manager" - Deploy encrypted secret key records. | 29/05/2026 | 29/05/2026 | Secrets Manager Guide |
 
 ### Week 4 Achievements:
 * Launched Auto Scaling group dynamically scaling compute tasks based on performance limits.

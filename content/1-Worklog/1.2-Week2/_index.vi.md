@@ -16,11 +16,11 @@ pre: " <b> 1.2. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| Thứ 2 | Thực hành bài Lab "Networking Essentials with Amazon VPC" - Tạo VPC, Subnets, Route Tables, Internet Gateway. | 12/05/2026 | 12/05/2026 | VPC Lab Guide |
-| Thứ 3 | Thực hành bài Lab "Compute Essentials with Amazon EC2" - Khởi tạo EC2 instance Linux và SSH từ máy cá nhân. | 13/05/2026 | 13/05/2026 | EC2 Lab Guide |
-| Thứ 4 | Thực hành bài Lab "Instance Profiling with IAM Roles for EC2" - Tạo IAM Role cấp quyền gọi S3 và gắn vào EC2. | 14/05/2026 | 14/05/2026 | IAM Role Lab Guide |
-| Thứ 5 | Thực hành bài Lab "Static Website Hosting with Amazon S3" - Tạo S3 bucket, upload file index.html và cấu hình hosting. | 15/05/2026 | 16/05/2026 | S3 Hosting Guide |
-| Thứ 6 | Thực hành bài Lab "Database Essentials with Amazon RDS" - Khởi tạo cụm database RDS MySQL trong subnet. | 16/05/2026 | 16/05/2026 | RDS MySQL Lab Guide |
+| Thứ 2 | Thực hành bài Lab "Networking Essentials with Amazon VPC" - Tạo VPC, Subnets, Route Tables, Internet Gateway. | 11/05/2026 | 11/05/2026 | VPC Lab Guide |
+| Thứ 3 | Thực hành bài Lab "Compute Essentials with Amazon EC2" - Khởi tạo EC2 instance Linux và SSH từ máy cá nhân. | 12/05/2026 | 12/05/2026 | EC2 Lab Guide |
+| Thứ 4 | Thực hành bài Lab "Instance Profiling with IAM Roles for EC2" - Tạo IAM Role cấp quyền gọi S3 và gắn vào EC2. | 13/05/2026 | 13/05/2026 | IAM Role Lab Guide |
+| Thứ 5 | Thực hành bài Lab "Static Website Hosting with Amazon S3" - Tạo S3 bucket, upload file index.html và cấu hình hosting. | 14/05/2026 | 15/05/2026 | S3 Hosting Guide |
+| Thứ 6 | Thực hành bài Lab "Database Essentials with Amazon RDS" - Khởi tạo cụm database RDS MySQL trong subnet. | 15/05/2026 | 15/05/2026 | RDS MySQL Lab Guide |
 
 ### Kết quả đạt được tuần 2:
 * Thiết lập thành công VPC cô lập với các dải phân vùng mạng con Public/Private.

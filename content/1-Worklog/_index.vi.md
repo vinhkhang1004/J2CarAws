@@ -22,26 +22,26 @@ Hệ thống J2Car AutoParts được thiết kế theo mô hình Micro-services
 
 Dưới đây là tiến độ chi tiết theo từng tuần thực hiện dự án:
 
-**Tuần 1 (05/05/2026 - 11/05/2026):** [Khởi tạo Tài khoản & Cơ bản AWS Explore](1.1-week1/)
+**Tuần 1 (05/05/2026 - 10/05/2026):** [Làm quen với môi trường thực tập, văn hóa làm việc tại FCAJ và quy trình thực hiện dự án. Tìm hiểu tổng quan về AWS, các dịch vụ điện toán đám mây và hoàn thành một số bài tập cơ bản nhằm làm quen với công nghệ và môi trường làm việc.](1.1-week1/)
 
-**Tuần 2 (12/05/2026 - 18/05/2026):** [Thực hành VPC, EC2 & Database cơ bản](1.2-week2/)
+**Tuần 2 (11/05/2026 - 17/05/2026):** [Tiếp tục thực hiện các task nhỏ và nghiên cứu các dịch vụ nền tảng của AWS như IAM, EC2, S3. Tìm hiểu cách quản lý tài nguyên, lưu trữ dữ liệu và cơ chế phân quyền trên hệ thống AWS thông qua thực hành các bài lab cơ bản.](1.2-week2/)
 
-**Tuần 3 (19/05/2026 - 25/05/2026):** [DynamoDB, CDN CloudFront & Lên Văn Phòng AWS (24/05)](1.3-week3/)
+**Tuần 3 (18/05/2026 - 24/05/2026):** [Tham gia làm việc trực tiếp tại văn phòng, tiếp tục nghiên cứu các dịch vụ AWS và thực hiện các bài thực hành liên quan đến VPC, RDS, CloudWatch nhằm hiểu rõ hơn về mạng, cơ sở dữ liệu và cơ chế giám sát hệ thống.](1.3-week3/)
 
-**Tuần 4 (26/05/2026 - 01/06/2026):** [Auto Scaling, DNS Route 53 & Bảo mật WAF/Secrets Manager](1.4-week4/)
+**Tuần 4 (25/05/2026 - 31/05/2026):** [Tiếp tục tìm hiểu các kiến thức chuyên sâu trên AWS và thực hiện các bài lab liên quan đến Elastic Load Balancer, Auto Scaling, Route 53, Lambda và các dịch vụ Container như ECS, EKS. Qua đó nắm được kiến trúc triển khai và khả năng mở rộng của hệ thống trên nền tảng đám mây.](1.4-week4/)
 
-**Tuần 5 (02/06/2026 - 08/06/2026):** [Serverless Lambda, SQS & Lên Văn Phòng AWS (07/06)](1.5-week5/)
+**Tuần 5 (01/06/2026 - 07/06/2026):** [Nghiên cứu thêm các kiến thức về nghiệp vụ và hệ sinh thái doanh nghiệp. Tìm hiểu các nguyên tắc thiết kế hệ thống, bảo mật, kiến trúc phần mềm và quy trình phát triển sản phẩm trong môi trường thực tế thông qua các dịch vụ serverless và lưu trữ bảo mật.](1.5-week5/)
 
-**Tuần 6 (09/06/2026 - 15/06/2026):** [Tích hợp Thuật toán Quét & Phân tích Hình ảnh (AI Scan Image)](1.6-week6/)
+**Tuần 6 (08/06/2026 - 14/06/2026):** [Bắt đầu tham gia phân tích nghiệp vụ và xây dựng ý tưởng cho dự án thực hành (Workshop). Nghiên cứu yêu cầu hệ thống cho ứng dụng thương mại điện tử phụ tùng ô tô J2Car AutoParts, thiết kế các API cơ bản và xây dựng tính năng phân tích hình ảnh AI Scan Image nhận diện linh kiện hỏng.](1.6-week6/)
 
-**Tuần 7 (16/06/2026 - 22/06/2026):** [Tích hợp Cổng Thanh toán Ngoài & Xử lý Webhook (IPN)](1.7-week7/)
+**Tuần 7 (15/06/2026 - 21/06/2026):** [Tiếp tục hoàn thiện giai đoạn phân tích và thiết kế kiến trúc hệ thống J2Car AutoParts. Xây dựng mô hình dữ liệu, thiết kế các module chức năng, tích hợp cổng thanh toán ngoài (Momo, VNPay, Stripe) và triển khai hàm AWS Lambda Serverless làm webhook IPN trong lớp mạng an toàn.](1.7-week7/)
 
-**Tuần 8 (23/06/2026 - 29/06/2026):** [Xây dựng Hàng đợi Xử lý Giao dịch & Worker Bất đồng bộ](1.8-week8/)
+**Tuần 8 (22/06/2026 - 28/06/2026):** [Tiếp tục hoàn thiện thiết kế dự án J2Car AutoParts, xây dựng luồng xử lý giao dịch bất đồng bộ bằng Amazon SQS để giảm tải hệ thống. Phát triển module Backend Worker kết nối SQS để polling tin nhắn, chốt đơn tự động, xóa cache giỏ hàng trong Redis, đồng thời gửi email thông báo qua Nodemailer và Socket.io realtime.](1.8-week8/)
 
-**Tuần 9 (30/06/2026 - 06/07/2026):** [Đóng gói Docker & Triển khai Lên ECS Fargate](1.9-week9/)
+**Tuần 9 (29/06/2026 - 05/07/2026):** [Bắt đầu phát triển hệ thống J2Car AutoParts dựa trên tài liệu thiết kế. Xây dựng các module Backend và Frontend, đóng gói container Backend bằng Docker và triển khai chạy cluster không máy chủ trên Amazon ECS Fargate, cấu hình ALB với Sticky Sessions để đảm bảo kết nối chat thời gian thực hoạt động ổn định.](1.9-week9/)
 
-**Tuần 10 (07/07/2026 - 13/07/2026):** [Triển khai Frontend, Cấu hình CDN & Thiết lập Tường lửa Bảo mật](1.10-week10/)
+**Tuần 10 (06/07/2026 - 12/07/2026):** [Triển khai toàn diện hệ thống J2Car AutoParts lên AWS: host React SPA Frontend trên S3 Web Hosting, cấu hình định tuyến qua CloudFront CDN mã hóa HTTPS. Áp dụng AWS WAFv2 thiết lập các rule bảo mật ngăn chặn SQL Injection, XSS bảo vệ an toàn cho hệ thống.](1.10-week10/)
 
-**Tuần 11 (14/07/2026 - 20/07/2026):** [Kiểm thử Phục hồi Thảm họa & Xác minh Tính Sẵn sàng Cao](1.11-week11/)
+**Tuần 11 (13/07/2026 - 19/07/2026):** [Thực hiện kiểm thử chức năng và kiểm thử tích hợp trên toàn bộ hệ thống J2Car AutoParts sau khi triển khai. Giả lập kịch bản sập Availability Zone (AZ) để kiểm tra khả năng tự động khôi phục thảm họa (Disaster Recovery), phát hiện và khắc phục các lỗi phát sinh trong quá trình failover.](1.11-week11/)
 
-**Tuần 12 (21/07/2026 - 27/07/2026):** [Tối ưu hóa Hiệu năng, Mở rộng Database & Giám sát Hệ thống](1.12-week12/)
+**Tuần 12 (20/07/2026 - 27/07/2026):** [Hoàn thiện dự án J2Car AutoParts thông qua kiểm thử tải (Load Testing), rà soát toàn bộ chức năng và tối ưu hiệu năng hệ thống bằng chỉ mục MongoDB, tách biệt Đọc/Ghi qua DocumentDB/Redis Replicas và cấu hình CloudWatch Dashboard theo dõi tài nguyên.](1.12-week12/)
