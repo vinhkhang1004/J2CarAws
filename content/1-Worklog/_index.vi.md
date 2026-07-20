@@ -44,4 +44,4 @@ Dưới đây là tiến độ chi tiết theo từng tuần thực hiện dự 
 
 **Tuần 11 (14/07/2026 - 20/07/2026):** [Kiểm thử Phục hồi Thảm họa & Xác minh Tính Sẵn sàng Cao](1.11-week11/)
 
-**Tuần 12 (21/07/2026 - 30/07/2026):** [Tối ưu hóa Hiệu năng, Mở rộng Database & Giám sát Hệ thống](1.12-week12/)
+**Tuần 12 (21/07/2026 - 27/07/2026):** [Tối ưu hóa Hiệu năng, Mở rộng Database & Giám sát Hệ thống](1.12-week12/)

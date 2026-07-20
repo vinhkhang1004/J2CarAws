@@ -44,4 +44,4 @@ Below is the detailed progress by week:
 
 **Week 11 (14/07/2026 - 20/07/2026):** [Disaster Recovery Testing & High Availability Verification](1.11-week11/)
 
-**Week 12 (21/07/2026 - 30/07/2026):** [Performance Optimization, Database Scaling & System Monitoring](1.12-week12/)
+**Week 12 (21/07/2026 - 27/07/2026):** [Performance Optimization, Database Scaling & System Monitoring](1.12-week12/)
