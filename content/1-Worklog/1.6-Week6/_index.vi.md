@@ -1,58 +1,27 @@
 ---
 title: "Worklog Tuần 6"
 date: 2024-01-01
-weight: 1
+weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-
 ### Mục tiêu tuần 6:
-
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Xây dựng API tiếp nhận ảnh chụp phụ tùng bị hỏng từ người dùng.
+* Phát triển thuật toán phân tích file name, metadata, từ khóa để nhận diện loại phụ tùng.
+* Kết nối truy vấn DocumentDB để đưa ra các gợi ý phụ tùng thay thế tương đương.
+* Cấu hình lưu trữ ảnh quét tạm thời trên Amazon S3.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| Thứ 2 | Xây dựng endpoint API `/api/upload/scan-image` để nhận file ảnh phụ tùng bị hỏng từ thiết bị client. | 09/06/2026 | 09/06/2026 | Express Upload API |
+| Thứ 3 | Viết thuật toán phân tích tên file, EXIF metadata và trích xuất các từ khóa (keywords) để phân loại loại phụ tùng ô tô. | 10/06/2026 | 11/06/2026 | Image Parsing Logic |
+| Thứ 4 | Xây dựng các câu lệnh truy vấn MongoDB để tự động tra cứu danh sách sản phẩm thay thế tương đương trong DocumentDB. | 11/06/2026 | 12/06/2026 | DocumentDB Query Builders |
+| Thứ 5 | Cấu hình đẩy ảnh quét tạm thời lên Amazon S3 Media Bucket phục vụ cải thiện chất lượng nhận diện sau này. | 12/06/2026 | 13/06/2026 | AWS S3 Integration |
+| Thứ 6 | Kiểm thử đầu cuối tính năng quét ảnh và gợi ý sản phẩm thay thế phù hợp với hình ảnh mẫu. | 13/06/2026 | 13/06/2026 | Feature Testing |
 
 ### Kết quả đạt được tuần 6:
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Hoàn thành API AI Scan Image.
+* Thuật toán phân tích từ khóa nhận diện chính xác các nhóm phụ tùng thông dụng (Hệ thống phanh, Lọc gió, Bugi, Lốp xe, Đèn pha).
+* Hệ thống hiển thị các sản phẩm gợi ý tương thích chính xác, nâng cao trải nghiệm mua sắm của người dùng.
+* Ảnh quét được lưu trữ gọn gàng trên Amazon S3.

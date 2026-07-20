@@ -1,57 +1,30 @@
 ---
 title: "Week 4 Worklog"
 date: 2024-01-01
-weight: 1
+weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 4 Objectives:
-
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Construct scaling architectures utilizing EC2 Auto Scaling and Application Load Balancer.
+* Setup custom domain mappings and resolve records using Amazon Route 53.
+* Create secure endpoints for private S3 connectivity using S3 Gateway Endpoints.
+* Defend ingress endpoints using AWS WAF.
+* Protect database credentials using AWS Secrets Manager.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| Monday | Complete "Scaling Applications with EC2 Auto Scaling" and configure ALB targets. | 26/05/2026 | 26/05/2026 | Auto Scaling Guide |
+| Tuesday | Complete "Hybrid DNS Management with Amazon Route 53" - Create hosted zones and records. | 27/05/2026 | 27/05/2026 | Route 53 Guide |
+| Wednesday | Complete "Private Access to S3 with VPC Endpoints" - Setup VPC S3 Gateway Endpoints. | 28/05/2026 | 28/05/2026 | S3 Endpoint Guide |
+| Thursday | Complete "Application Protection with AWS WAF" - Attach Web ACL filtering criteria. | 29/05/2026 | 29/05/2026 | AWS WAF Lab Guide |
+| Friday | Complete "Credentials Management with AWS Secrets Manager" - Deploy encrypted secret key records. | 30/05/2026 | 30/05/2026 | Secrets Manager Guide |
 
 ### Week 4 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Launched Auto Scaling group dynamically scaling compute tasks based on performance limits.
+* Managed DNS records and private network resolution via Route 53.
+* Integrated private network S3 calls, eliminating public NAT Gateway charges.
+* Deployed WAFv2 filter rules to block SQLi and malicious scanning bots.
+* Protected database connection URI keys inside Secrets Manager.

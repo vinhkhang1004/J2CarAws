@@ -5,104 +5,113 @@ weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
-Tại phần này, bạn cần tóm tắt các nội dung trong workshop mà bạn **dự tính** sẽ làm.
-
-# IoT Weather Platform for Lab Research  
-## Giải pháp AWS Serverless hợp nhất cho giám sát thời tiết thời gian thực  
+# Nền tảng Thương mại Điện tử Phụ tùng Ô tô NodeJ2Car  
+## Giải pháp AWS Cloud tối ưu hóa hiệu năng, bảo mật và mở rộng linh hoạt  
 
 ### 1. Tóm tắt điều hành  
-IoT Weather Platform được thiết kế dành cho nhóm *ITea Lab* tại TP. Hồ Chí Minh nhằm nâng cao khả năng thu thập và phân tích dữ liệu thời tiết. Nền tảng hỗ trợ tối đa 5 trạm thời tiết, có khả năng mở rộng lên 10–15 trạm, sử dụng thiết bị biên Raspberry Pi kết hợp cảm biến ESP32 để truyền dữ liệu qua MQTT. Nền tảng tận dụng các dịch vụ AWS Serverless để cung cấp giám sát thời gian thực, phân tích dự đoán và tiết kiệm chi phí, với quyền truy cập giới hạn cho 5 thành viên phòng lab thông qua Amazon Cognito.  
+Dự án **NodeJ2Car** xây dựng một hệ thống thương mại điện tử chuyên biệt cung cấp phụ tùng ô tô cao cấp. Nền tảng nổi bật với ba tính năng đột phá: Bản vẽ sơ đồ xe tương tác 2D trực quan, Chat hỗ trợ trực tuyến thời gian thực qua WebSockets và Tìm kiếm phụ tùng lỗi bằng hình ảnh quét AI. Để đáp ứng nhu cầu giao dịch trực tuyến chịu tải lớn, bảo mật tuyệt đối thông tin khách hàng và xử lý thanh toán bất đồng bộ tin cậy (Momo, VNPay, Stripe), toàn bộ hệ thống được triển khai trên đám mây AWS theo mô hình hybrid container-serverless. Giải pháp này giúp NodeJ2Car đạt độ sẵn sàng cao (High Availability), tự động mở rộng theo tải (Auto Scaling) và giảm thiểu tối đa chi phí vận hành thực tế.
 
 ### 2. Tuyên bố vấn đề  
 *Vấn đề hiện tại*  
-Các trạm thời tiết hiện tại yêu cầu thu thập dữ liệu thủ công, khó quản lý khi có nhiều trạm. Không có hệ thống tập trung cho dữ liệu hoặc phân tích thời gian thực, và các nền tảng bên thứ ba thường tốn kém và quá phức tạp.  
+1. **Trải nghiệm tìm kiếm phụ tùng phức tạp:** Phụ tùng ô tô có hàng triệu mã linh kiện khác nhau. Khách hàng thông thường gặp rất nhiều khó khăn và dễ nhầm lẫn khi tìm mua linh kiện phù hợp với đời xe của mình qua thanh tìm kiếm văn bản truyền thống.
+2. **Quá tải hệ thống khi tích hợp luồng xử lý thời gian thực:** Kết nối chat thời gian thực qua Socket.io và xử lý Webhook thanh toán (IPN) đồng thời rất dễ làm tắc nghẽn máy chủ chính, dẫn đến rủi ro sập hệ thống hoặc thất thoát giao dịch của khách hàng.
+3. **Mối đe dọa bảo mật và tấn công mạng:** Một trang web thương mại điện tử chứa thông tin cá nhân và tài chính của người dùng luôn là mục tiêu của các cuộc tấn công DDoS, SQL Injection và đánh cắp dữ liệu.
 
 *Giải pháp*  
-Nền tảng sử dụng AWS IoT Core để tiếp nhận dữ liệu MQTT, AWS Lambda và API Gateway để xử lý, Amazon S3 để lưu trữ (bao gồm data lake), và AWS Glue Crawlers cùng các tác vụ ETL để trích xuất, chuyển đổi, tải dữ liệu từ S3 data lake sang một S3 bucket khác để phân tích. AWS Amplify với Next.js cung cấp giao diện web, và Amazon Cognito đảm bảo quyền truy cập an toàn. Tương tự như Thingsboard và CoreIoT, người dùng có thể đăng ký thiết bị mới và quản lý kết nối, nhưng nền tảng này hoạt động ở quy mô nhỏ hơn và phục vụ mục đích sử dụng nội bộ. Các tính năng chính bao gồm bảng điều khiển thời gian thực, phân tích xu hướng và chi phí vận hành thấp.  
+Hệ thống giải quyết triệt để các vấn đề trên thông qua sự kết hợp của phần mềm hiện đại và hạ tầng đám mây AWS:
+*   **Sơ đồ 2D trực quan (Schematics) & AI Scan Image:** Giúp đơn giản hóa quá trình tìm kiếm phụ tùng chính xác mà không cần nhớ mã linh kiện.
+*   **Phát tải bất đồng bộ luồng thanh toán:** Tách biệt hoàn toàn luồng xử lý Webhook IPN bằng dịch vụ không máy chủ **AWS Lambda** và hàng đợi tin nhắn **Amazon SQS**, đảm bảo thông tin thanh toán luôn được xếp hàng bảo toàn và xử lý thành công ngay cả khi máy chủ API gặp sự cố.
+*   **Chia sẻ tải Socket.io:** Sử dụng **Amazon ElastiCache Redis** làm bộ điều phối (Redis Adapter) giúp đồng bộ hóa dữ liệu chat realtime trên toàn cụm máy chủ Backend.
+*   **Bảo vệ biên toàn diện:** Toàn bộ hệ thống Backend được giấu hoàn toàn trong Private Subnets đứng sau **Application Load Balancer (ALB)**, bảo vệ vòng ngoài bằng **AWS WAF** và **CloudFront CDN**.
 
 *Lợi ích và hoàn vốn đầu tư (ROI)*  
-Giải pháp tạo nền tảng cơ bản để các thành viên phòng lab phát triển một nền tảng IoT lớn hơn, đồng thời cung cấp nguồn dữ liệu cho những người nghiên cứu AI phục vụ huấn luyện mô hình hoặc phân tích. Nền tảng giảm bớt báo cáo thủ công cho từng trạm thông qua hệ thống tập trung, đơn giản hóa quản lý và bảo trì, đồng thời cải thiện độ tin cậy dữ liệu. Chi phí hàng tháng ước tính 0,66 USD (theo AWS Pricing Calculator), tổng cộng 7,92 USD cho 12 tháng. Tất cả thiết bị IoT đã được trang bị từ hệ thống trạm thời tiết hiện tại, không phát sinh chi phí phát triển thêm. Thời gian hoàn vốn 6–12 tháng nhờ tiết kiệm đáng kể thời gian thao tác thủ công.  
+*   **Tăng tỷ lệ chuyển đổi đơn hàng:** Tiết kiệm 70% thời gian tìm kiếm phụ tùng của khách hàng nhờ bản đồ sơ đồ và AI Scan, giúp nâng cao doanh số.
+*   **Đảm bảo tính sẵn sàng 99.99%:** Kiến trúc đa vùng Availability Zone (Multi-AZ) trên ECS Fargate giúp hệ thống hoạt động liên tục, không bị gián đoạn.
+*   **Tối ưu hóa chi phí hạ tầng:** Việc sử dụng các dịch vụ Serverless và Auto Scaling giúp chi phí đám mây bám sát lưu lượng sử dụng thực tế (Pay-as-you-go), tránh lãng phí khi nhàn rỗi. Thời gian hoàn vốn dự kiến trong vòng 6 tháng đầu hoạt động nhờ tiết kiệm chi phí nhân sự quản trị và giảm thiểu tỷ lệ rớt đơn hàng.
+
+---
 
 ### 3. Kiến trúc giải pháp  
-Nền tảng áp dụng kiến trúc AWS Serverless để quản lý dữ liệu từ 5 trạm dựa trên Raspberry Pi, có thể mở rộng lên 15 trạm. Dữ liệu được tiếp nhận qua AWS IoT Core, lưu trữ trong S3 data lake và xử lý bởi AWS Glue Crawlers và ETL jobs để chuyển đổi và tải vào một S3 bucket khác cho mục đích phân tích. Lambda và API Gateway xử lý bổ sung, trong khi Amplify với Next.js cung cấp bảng điều khiển được bảo mật bởi Cognito.  
+Hệ thống sử dụng mạng ảo **Amazon VPC** làm nền tảng an ninh, chia làm các phân vùng Public và Private Subnets hoạt động trên 2 vùng sẵn sàng (AZ) độc lập. Mọi yêu cầu truy cập từ bên ngoài được kiểm duyệt bởi **AWS WAF** và **Amazon CloudFront** trước khi phân phối vào mạng nội bộ.
 
-![IoT Weather Station Architecture](/images/2-Proposal/edge_architecture.jpeg)
-
-![IoT Weather Platform Architecture](/images/2-Proposal/platform_architecture.jpeg)
+![Kiến trúc tổng quan AWS](/images/5-Workshop/architecture.png)
 
 *Dịch vụ AWS sử dụng*  
-- *AWS IoT Core*: Tiếp nhận dữ liệu MQTT từ 5 trạm, mở rộng lên 15.  
-- *AWS Lambda*: Xử lý dữ liệu và kích hoạt Glue jobs (2 hàm).  
-- *Amazon API Gateway*: Giao tiếp với ứng dụng web.  
-- *Amazon S3*: Lưu trữ dữ liệu thô (data lake) và dữ liệu đã xử lý (2 bucket).  
-- *AWS Glue*: Crawlers lập chỉ mục dữ liệu, ETL jobs chuyển đổi và tải dữ liệu.  
-- *AWS Amplify*: Lưu trữ giao diện web Next.js.  
-- *Amazon Cognito*: Quản lý quyền truy cập cho người dùng phòng lab.  
+*   **Amazon VPC:** Nền tảng thiết lập cấu trúc mạng an toàn (Public/Private Subnets, NAT Gateways).
+*   **Amazon ECS & AWS Fargate:** Chạy các tác vụ Backend NodeJS trong container một cách tự động, co giãn linh hoạt.
+*   **Application Load Balancer (ALB):** Cân bằng tải cho các ECS tasks, hỗ trợ Sticky Sessions duy trì kết nối WebSocket.
+*   **Amazon DocumentDB:** Hệ cơ sở dữ liệu lưu trữ chính tương thích MongoDB, cấu hình Primary (ghi) và Replica (đọc).
+*   **Amazon ElastiCache Redis:** Bộ nhớ đệm chia sẻ phiên chat Socket.io và cache dữ liệu sản phẩm.
+*   **AWS Lambda & Amazon SQS:** Xử lý Webhook thanh toán và hàng đợi giao dịch bất đồng bộ.
+*   **Amazon S3 & S3 Gateway Endpoint:** Lưu trữ mã nguồn tĩnh Frontend (React SPA) và tệp tin ảnh sản phẩm, kết nối trực tiếp nội bộ an toàn.
+*   **Amazon CloudFront & AWS WAF:** Hệ thống CDN tăng tốc tải trang và tường lửa ứng dụng web chống tấn công.
+*   **Amazon ECR:** Lưu trữ Docker Image của Backend.
 
 *Thiết kế thành phần*  
-- *Thiết bị biên*: Raspberry Pi thu thập và lọc dữ liệu cảm biến, gửi tới IoT Core.  
-- *Tiếp nhận dữ liệu*: AWS IoT Core nhận tin nhắn MQTT từ thiết bị biên.  
-- *Lưu trữ dữ liệu*: Dữ liệu thô lưu trong S3 data lake; dữ liệu đã xử lý lưu ở một S3 bucket khác.  
-- *Xử lý dữ liệu*: AWS Glue Crawlers lập chỉ mục dữ liệu; ETL jobs chuyển đổi để phân tích.  
-- *Giao diện web*: AWS Amplify lưu trữ ứng dụng Next.js cho bảng điều khiển và phân tích thời gian thực.  
-- *Quản lý người dùng*: Amazon Cognito giới hạn 5 tài khoản hoạt động.  
+*   **Frontend (Giao diện):** Đóng gói React SPA đặt tại S3 Web Bucket, truyền tải qua CloudFront CDN.
+*   **Backend (Xử lý logic):** Container NodeJS chạy trên ECS Fargate trong Private Subnet, định tuyến bởi ALB.
+*   **Integration (Tích hợp):** Webhook IPN gọi trực tiếp tới AWS Lambda, ghi nhận hóa đơn vào SQS, ECS worker rút tin nhắn chốt đơn hàng và thông báo trạng thái.
+*   **Database (Dữ liệu):** DocumentDB Cluster phân chia luồng Ghi (Primary AZ1) và Đọc (Replica AZ2).
+
+---
 
 ### 4. Triển khai kỹ thuật  
 *Các giai đoạn triển khai*  
-Dự án gồm 2 phần — thiết lập trạm thời tiết biên và xây dựng nền tảng thời tiết — mỗi phần trải qua 4 giai đoạn:  
-1. *Nghiên cứu và vẽ kiến trúc*: Nghiên cứu Raspberry Pi với cảm biến ESP32 và thiết kế kiến trúc AWS Serverless (1 tháng trước kỳ thực tập).  
-2. *Tính toán chi phí và kiểm tra tính khả thi*: Sử dụng AWS Pricing Calculator để ước tính và điều chỉnh (Tháng 1).  
-3. *Điều chỉnh kiến trúc để tối ưu chi phí/giải pháp*: Tinh chỉnh (ví dụ tối ưu Lambda với Next.js) để đảm bảo hiệu quả (Tháng 2).  
-4. *Phát triển, kiểm thử, triển khai*: Lập trình Raspberry Pi, AWS services với CDK/SDK và ứng dụng Next.js, sau đó kiểm thử và đưa vào vận hành (Tháng 2–3).  
+Dự án được chia thành 4 giai đoạn cụ thể:
+1.  **Giai đoạn 1: Phân tích & Vẽ kiến trúc mạng (Tuần 1 - 2):** Khởi tạo VPC, phân bổ IP cho các Subnets, cấu hình Route Tables và các Security Groups. Thiết kế cấu trúc cơ sở dữ liệu DocumentDB.
+2.  **Giai đoạn 2: Phát triển Core API & Tính năng tương tác (Tuần 3 - 5):** Viết API xác thực, CRUD phụ tùng, trang sơ đồ Schematic, và tích hợp Socket.io sử dụng Redis làm bộ chia sẻ trạng thái.
+3.  **Giai đoạn 3: Tích hợp Serverless Payment & Container hóa (Tuần 6 - 8):** Viết code cho AWS Lambda nhận IPN, tạo SQS queue, viết module Worker xử lý giao dịch. Viết Dockerfile đóng gói mã nguồn Backend.
+4.  **Giai đoạn 4: Triển khai Đám mây & Kiểm thử Tải (Tuần 9 - 11):** Triển khai ECS Fargate, ALB, S3, CloudFront và WAF. Chạy kiểm thử tải (Load test) giả lập 1,000+ người dùng đồng thời, tối ưu chỉ mục cơ sở dữ liệu và hoàn thiện bàn giao.
 
 *Yêu cầu kỹ thuật*  
-- *Trạm thời tiết biên*: Cảm biến (nhiệt độ, độ ẩm, lượng mưa, tốc độ gió), vi điều khiển ESP32, Raspberry Pi làm thiết bị biên. Raspberry Pi chạy Raspbian, sử dụng Docker để lọc dữ liệu và gửi 1 MB/ngày/trạm qua MQTT qua Wi-Fi.  
-- *Nền tảng thời tiết*: Kiến thức thực tế về AWS Amplify (lưu trữ Next.js), Lambda (giảm thiểu do Next.js xử lý), AWS Glue (ETL), S3 (2 bucket), IoT Core (gateway và rules), và Cognito (5 người dùng). Sử dụng AWS CDK/SDK để lập trình (ví dụ IoT Core rules tới S3). Next.js giúp giảm tải Lambda cho ứng dụng web fullstack.  
+*   **Môi trường chạy:** Docker Engine để build image, AWS CLI & AWS CDK để định cấu hình hạ tầng bằng mã (Infrastructure as Code).
+*   **Frontend:** ReactJS + Vite + Tailwind CSS, thư viện `socket.io-client` kết nối WebSocket.
+*   **Backend:** NodeJS + ExpressJS, Mongoose kết nối DocumentDB, `vnpay` & `axios` xử lý giao dịch.
+
+---
 
 ### 5. Lộ trình & Mốc triển khai  
-- *Trước thực tập (Tháng 0)*: 1 tháng lên kế hoạch và đánh giá trạm cũ.  
-- *Thực tập (Tháng 1–3)*:  
-    - Tháng 1: Học AWS và nâng cấp phần cứng.  
-    - Tháng 2: Thiết kế và điều chỉnh kiến trúc.  
-    - Tháng 3: Triển khai, kiểm thử, đưa vào sử dụng.  
-- *Sau triển khai*: Nghiên cứu thêm trong vòng 1 năm.  
+*   **Mốc 1 (Tuần 1 - 2):** Hoàn thành hạ tầng VPC mạng cơ bản và thiết lập cluster DocumentDB. API Xác thực người dùng hoạt động ổn định.
+*   **Mốc 2 (Tuần 3 - 5):** Hoàn thành giao diện trang chủ, trang sơ đồ tương tác Schematic, và hệ thống phòng chat realtime giữa khách hàng và Admin.
+*   **Mốc 3 (Tuần 6 - 8):** Tích hợp thành công AI Scan Image nhận diện phụ tùng. Xây dựng hoàn chỉnh luồng nhận Webhook thanh toán tự động qua Lambda và hàng đợi SQS.
+*   **Mốc 4 (Tuần 9 - 10):** Triển khai thành công ứng dụng trên ECS Fargate và phân phối Frontend qua CloudFront CDN được bảo vệ bởi AWS WAF.
+*   **Mốc 5 (Tuần 11):** Hoàn tất load testing, tối ưu hóa hiệu năng cơ sở dữ liệu và bàn giao dự án.
+
+---
 
 ### 6. Ước tính ngân sách  
-Có thể xem chi phí trên [AWS Pricing Calculator](https://calculator.aws/#/estimate?id=621f38b12a1ef026842ba2ddfe46ff936ed4ab01)  
-Hoặc tải [tệp ước tính ngân sách](../attachments/budget_estimation.pdf).  
+Chi phí hạ tầng AWS hàng tháng dự kiến (dành cho môi trường Production quy mô vừa):
 
-*Chi phí hạ tầng*  
-- AWS Lambda: 0,00 USD/tháng (1.000 request, 512 MB lưu trữ).  
-- S3 Standard: 0,15 USD/tháng (6 GB, 2.100 request, 1 GB quét).  
-- Truyền dữ liệu: 0,02 USD/tháng (1 GB vào, 1 GB ra).  
-- AWS Amplify: 0,35 USD/tháng (256 MB, request 500 ms).  
-- Amazon API Gateway: 0,01 USD/tháng (2.000 request).  
-- AWS Glue ETL Jobs: 0,02 USD/tháng (2 DPU).  
-- AWS Glue Crawlers: 0,07 USD/tháng (1 crawler).  
-- MQTT (IoT Core): 0,08 USD/tháng (5 thiết bị, 45.000 tin nhắn).  
+| Dịch vụ AWS | Cấu hình ước tính | Chi phí ước tính / Tháng |
+| :--- | :--- | :--- |
+| **Amazon ECS & Fargate** | 2 Tasks (0.5 vCPU, 1 GB RAM) chạy liên tục | ~ $15.00 |
+| **Application Load Balancer** | 1 ALB, 1 LCU | ~ $22.00 |
+| **Amazon DocumentDB** | Cluster db.t3.medium (1 Primary + 1 Replica) | ~ $110.00 |
+| **Amazon ElastiCache Redis** | cache.t3.micro Cluster (1 Primary + 1 Replica) | ~ $30.00 |
+| **Amazon S3** | Lưu trữ Web & Media (tổng ~ 50 GB + request) | ~ $3.00 |
+| **Amazon CloudFront** | Lưu lượng Data Transfer Out ~ 150 GB | ~ $12.00 |
+| **AWS WAF** | 1 Web ACL + 3 Rules cơ bản | ~ $10.00 |
+| **NAT Gateways** | 2 NAT Gateways + phí xử lý dữ liệu qua mạng | ~ $65.00 |
+| **AWS Lambda & SQS** | 50,000 giao dịch (nằm trong Free Tier) | ~ $0.00 |
+| **Tổng chi phí hạ tầng** | **Quy mô Production hoạt động ổn định** | **~ $267.00 / Tháng** |
 
-*Tổng*: 0,7 USD/tháng, 8,40 USD/12 tháng  
-- *Phần cứng*: 265 USD một lần (Raspberry Pi 5 và cảm biến).  
+---
 
 ### 7. Đánh giá rủi ro  
-*Ma trận rủi ro*  
-- Mất mạng: Ảnh hưởng trung bình, xác suất trung bình.  
-- Hỏng cảm biến: Ảnh hưởng cao, xác suất thấp.  
-- Vượt ngân sách: Ảnh hưởng trung bình, xác suất thấp.  
+*Ma trận rủi ro & Chiến lược giảm thiểu*  
+1.  **Nghẽn cổ chai cơ sở dữ liệu (DocumentDB):**
+    *   *Rủi ro:* Lượng truy vấn đọc thông số phụ tùng quá lớn khi chạy chiến dịch khuyến mại làm CPU DB đạt 100%.
+    *   *Giảm thiểu:* Định cấu hình chuyển toàn bộ các câu lệnh tìm kiếm/đọc sản phẩm sang các Replica Instance (chỉ đọc), đồng thời lưu trữ các phụ tùng hot nhất vào bộ nhớ cache Redis.
+2.  **Sự cố đứt kết nối WebSocket (Chat Real-time):**
+    *   *Rủi ro:* Người dùng di chuyển mạng hoặc máy chủ tự động co giãn (Auto Scaling) làm ngắt luồng chat.
+    *   *Giảm thiểu:* Cấu hình ALB Sticky Sessions để neo người dùng vào đúng container đang chat, kết hợp Redis Pub/Sub adapter để đồng bộ tin nhắn xuyên suốt các tasks.
+3.  **Chi phí đám mây vượt tầm kiểm soát:**
+    *   *Rủi ro:* Băng thông mạng tăng vọt hoặc cấu hình sai tài nguyên Fargate.
+    *   *Giảm thiểu:* Thiết lập AWS Budgets gửi cảnh báo qua Email ngay khi chi phí dự kiến vượt quá $300/tháng. Cấu hình quy tắc vòng đời S3 để tự động xóa/nén các ảnh quét AI cũ.
 
-*Chiến lược giảm thiểu*  
-- Mạng: Lưu trữ cục bộ trên Raspberry Pi với Docker.  
-- Cảm biến: Kiểm tra định kỳ, dự phòng linh kiện.  
-- Chi phí: Cảnh báo ngân sách AWS, tối ưu dịch vụ.  
-
-*Kế hoạch dự phòng*  
-- Quay lại thu thập thủ công nếu AWS gặp sự cố.  
-- Sử dụng CloudFormation để khôi phục cấu hình liên quan đến chi phí.  
+---
 
 ### 8. Kết quả kỳ vọng  
-*Cải tiến kỹ thuật*: Dữ liệu và phân tích thời gian thực thay thế quy trình thủ công. Có thể mở rộng tới 10–15 trạm.  
-*Giá trị dài hạn*: Nền tảng dữ liệu 1 năm cho nghiên cứu AI, có thể tái sử dụng cho các dự án tương lai.
+*   **Cải tiến kỹ thuật:** Tốc độ tải trang Frontend dưới 2 giây trên toàn thế giới nhờ CloudFront CDN. Máy chủ Backend có khả năng tự phục hồi và tự động nhân rộng từ 2 tasks lên tối đa 10 tasks khi lượng truy cập tăng đột biến.
+*   **Giá trị kinh doanh:** Đảm bảo tỉ lệ thất thoát đơn hàng bằng 0% nhờ hàng đợi thanh toán SQS đáng tin cậy. Tăng trải nghiệm người dùng giúp tăng doanh thu bán hàng phụ tùng ô tô nhờ các tính năng tương tác sơ đồ độc đáo và quét hình ảnh thông minh.

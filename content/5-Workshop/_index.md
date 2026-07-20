@@ -5,27 +5,35 @@ weight: 5
 chapter: false
 pre: " <b> 5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-# Secure Hybrid Access to S3 using VPC Endpoints
+# Deploying NodeJ2Car Auto Parts eCommerce System on AWS
 
-#### Overview
+Welcome to the step-by-step hands-on Workshop guide for deploying the **NodeJ2Car** auto parts e-commerce system onto Amazon Web Services (AWS) cloud infrastructure. 
 
-**AWS PrivateLink** provides private connectivity to AWS services from VPCs and your on-premises networks, without exposing your traffic to the Public Internet.
+The system leverages a modern containerized and serverless architecture designed for high availability (Multi-AZ), security, and cost efficiency.
 
-In this lab, you will learn how to create, configure, and test VPC endpoints that enable your workloads to reach AWS services without traversing the Public Internet.
+![AWS Architecture Overview](/images/5-Workshop/architecture.png)
 
-You will create two types of endpoints to access Amazon S3: a Gateway VPC endpoint, and an Interface VPC endpoint. These two types of VPC endpoints offer different benefits depending on if you are accessing Amazon S3 from the cloud or your on-premises location
-+ **Gateway** - Create a gateway endpoint to send traffic to Amazon S3 or DynamoDB using private IP addresses.You route traffic from your VPC to the gateway endpoint using route tables.
-+ **Interface** - Create an interface endpoint to send traffic to endpoint services that use a Network Load Balancer to distribute traffic. Traffic destined for the endpoint service is resolved using DNS.
+---
 
-#### Content
+### Workshop Sections:
 
-1. [Workshop overview](5.1-Workshop-overview)
-2. [Prerequiste](5.2-Prerequiste/)
-3. [Access S3 from VPC](5.3-S3-vpc/)
-4. [Access S3 from On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (Bonus)](5.5-Policy/)
-6. [Clean up](5.6-Cleanup/)
+1. **[Overview & AWS Architecture](5.1-overview/)**
+   * Introduction to NodeJ2Car system features and detail breakdown of AWS architectural tiers.
+2. **[VPC & Networking Setup](5.2-vpc-networking/)**
+   * Provision VPC networks, configure Public/Private subnets across 2 AZs, Route Tables, and NAT Gateways.
+3. **[Provision DocumentDB & Redis](5.3-databases/)**
+   * Launch MongoDB-compatible DocumentDB clusters and ElastiCache Redis in isolated subnets.
+4. **[S3 Storage & VPC Endpoints](5.4-storage/)**
+   * Deploy S3 buckets and bind VPC Gateway Endpoints to route storage traffic inside AWS networks.
+5. **[Docker Packaging & ECS Fargate](5.5-ecs-fargate/)**
+   * Package Backend applications, register to ECR, and orchestrate serverless containers using ECS Fargate behind an ALB with Sticky Sessions.
+6. **[Serverless Payment & SQS Pipeline](5.6-serverless-payment/)**
+   * Build serverless asynchronous callback integration using AWS Lambda, SQS message queues, and consumer workers.
+7. **[CloudFront Distribution & AWS WAF](5.7-cloudfront-waf/)**
+   * Build and deploy React SPA to S3, accelerate globally via CloudFront CDN, and filter attacks using AWS WAF.
+8. **[Testing, Cleanup & Summary](5.8-testing-cleanup/)**
+   * End-to-end functionality testing, architecture cost/security review, and resource cleanup guide.
+9. **[Demo](5.9-demo/)**
+   * Demo video/file for the workshop.
+

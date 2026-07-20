@@ -6,28 +6,34 @@ chapter: false
 pre: " <b> 5. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+# Triển khai Hệ thống Thương mại Điện tử Phụ tùng Ô tô (NodeJ2Car) trên AWS
 
+Chào mừng các bạn đến với tài liệu hướng dẫn thực hành Workshop triển khai ứng dụng thương mại điện tử **NodeJ2Car** trên hạ tầng điện toán đám mây Amazon Web Services (AWS). 
 
-# Đảm bảo truy cập Hybrid an toàn đến S3 bằng cách sử dụng VPC endpoint
+Hệ thống được thiết kế theo mô hình kiến trúc hiện đại, có khả năng mở rộng cao, bảo mật nghiêm ngặt và chịu lỗi vật lý cao (Multi-AZ).
 
-#### Tổng quan
+![Kiến trúc tổng quan AWS](/images/5-Workshop/architecture.png)
 
-**AWS PrivateLink** cung cấp kết nối riêng tư đến các dịch vụ aws từ VPCs hoặc trung tâm dữ liệu (on-premise) mà không làm lộ lưu lượng truy cập ra ngoài public internet.
+---
 
-Trong bài lab này, chúng ta sẽ học cách tạo, cấu hình, và kiểm tra VPC endpoints để cho phép workload của bạn tiếp cận các dịch vụ AWS mà không cần đi qua Internet công cộng.
+### Các nội dung chính trong Workshop:
 
-Chúng ta sẽ tạo hai loại endpoints để truy cập đến Amazon S3: gateway vpc endpoint và interface vpc endpoint. Hai loại vpc endpoints này mang đến nhiều lợi ích tùy thuộc vào việc bạn truy cập đến S3 từ môi trường cloud hay từ trung tâm dữ liệu (on-premise).
-+ **Gateway** - Tạo gateway endpoint để gửi lưu lượng đến Amazon S3 hoặc DynamoDB using private IP addresses. Bạn điều hướng lưu lượng từ VPC của bạn đến gateway endpoint bằng các bảng định tuyến (route tables)
-+ **Interface** - Tạo interface endpoint để gửi lưu lượng đến các dịch vụ điểm cuối (endpoints) sử dụng Network Load Balancer để phân phối lưu lượng. Lưu lượng dành cho dịch vụ điểm cuối được resolved bằng DNS.
+1. **[Giới thiệu & Kiến trúc AWS](5.1-overview/)**
+   * Tổng quan dự án NodeJ2Car và phân tích chi tiết vai trò các tầng dịch vụ AWS.
+2. **[Thiết lập VPC & Hạ tầng mạng](5.2-vpc-networking/)**
+   * Khởi tạo VPC, phân vùng subnet Public/Private trên 2 Availability Zones (ap-southeast-1a và ap-southeast-1b), thiết lập Route Tables và NAT Gateways.
+3. **[Triển khai DocumentDB & Redis](5.3-databases/)**
+   * Cấu hình database DocumentDB (MongoDB-compatible) và ElastiCache Redis chịu lỗi trong mạng riêng tư.
+4. **[Lưu trữ S3 & VPC Gateway Endpoints](5.4-storage/)**
+   * Thiết lập S3 buckets lưu trữ tĩnh và hình ảnh, cấu hình VPC Gateway Endpoint để kết nối nội bộ miễn phí băng thông.
+5. **[Đóng gói Docker & ECS Fargate](5.5-ecs-fargate/)**
+   * Đóng gói mã nguồn Backend, đẩy lên ECR và vận hành không máy chủ trên ECS Fargate qua Load Balancer với Sticky Sessions.
+6. **[Xử lý thanh toán Serverless & SQS](5.6-serverless-payment/)**
+   * Xây dựng luồng nhận thanh toán bất đồng bộ bảo mật sử dụng AWS Lambda Webhook, hàng đợi tin nhắn SQS và Worker.
+7. **[Phân phối CloudFront & AWS WAF](5.7-cloudfront-waf/)**
+   * Lưu trữ React SPA trên S3, phân phối CDN qua CloudFront và thiết lập tường lửa WAF chống SQL Injection, XSS, DDoS.
+8. **[Kiểm thử & Dọn dẹp tài nguyên](5.8-testing-cleanup/)**
+   * Kiểm thử tính năng (AI Scan Image, Webhook, Chat), đánh giá lợi ích kiến trúc và hướng dẫn dọn dẹp tránh phát sinh chi phí.
+9. **[Demo](5.9-demo/)**
+   * Video/tài liệu demo cho Workshop.
 
-#### Nội dung
-
-1. [Tổng quan về workshop](5.1-Workshop-overview/)
-2. [Chuẩn bị](5.2-Prerequiste/)
-3. [Truy cập đến S3 từ VPC](5.3-S3-vpc/)
-4. [Truy cập đến S3 từ TTDL On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (làm thêm)](5.5-Policy/)
-6. [Dọn dẹp tài nguyên](5.6-Cleanup/)

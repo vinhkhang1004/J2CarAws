@@ -5,55 +5,26 @@ weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 1:
-
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Đăng ký tài khoản và nhập thông tin chuẩn bị lên văn phòng trên HCM Portal.
+* Hoàn thành 5 nhiệm vụ khởi động của chương trình để nhận $100 AWS Credit.
+* Học cách vẽ sơ đồ kiến trúc hạ tầng AWS bằng draw.io.
+* Đăng ký tài khoản AWS cá nhân và thiết lập cảnh báo ngân sách AWS Budgets.
+* Tìm hiểu kiến thức cơ bản về AWS Identity and Access Management (IAM).
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| Thứ 2 | Đăng ký tài khoản tại HCM Portal, cập nhật thông tin cá nhân và hồ sơ chuẩn bị cho các buổi lên văn phòng. | 05/05/2026 | 05/05/2026 | Hướng dẫn HCM Portal |
+| Thứ 3 | Thực hiện 5 nhiệm vụ khởi động (onboarding tasks) của ban tổ chức để nhận credit hỗ trợ thực hành $100 AWS. | 06/05/2026 | 06/05/2026 | Tài liệu Workforce Program |
+| Thứ 4 | Tìm hiểu các ký hiệu biểu tượng (icons) dịch vụ AWS và thực hành thiết kế sơ đồ kiến trúc draw.io cơ bản. | 07/05/2026 | 07/05/2026 | AWS Architecture Icons |
+| Thứ 5 | Đăng ký tài khoản AWS và cấu hình AWS Budgets gửi cảnh báo qua email khi chi phí vượt quá ngưỡng tự đặt. | 08/05/2026 | 08/05/2026 | AWS Budgets User Guide |
+| Thứ 6 | Tìm hiểu dịch vụ AWS IAM, tạo IAM Users, Groups và phân quyền bằng IAM Policies cơ bản. | 09/05/2026 | 09/05/2026 | AWS IAM Guide |
 
 ### Kết quả đạt được tuần 1:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Đăng ký thành công tài khoản portal và hoàn tất thông tin lên văn phòng.
+* Nhận thành công $100 AWS Credit vào tài khoản thực hành cá nhân.
+* Thành thạo kỹ năng vẽ sơ đồ kiến trúc trên draw.io.
+* Tạo lập tài khoản AWS cá nhân bảo mật, thiết lập Budgets ngăn phát sinh chi phí ngoài ý muốn.
+* Hiểu rõ cơ chế phân quyền tối thiểu (Least Privilege) của IAM.

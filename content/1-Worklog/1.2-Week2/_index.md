@@ -1,57 +1,30 @@
 ---
 title: "Week 2 Worklog"
 date: 2024-01-01
-weight: 1
+weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 2 Objectives:
-
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Design and deploy custom Amazon VPC networks.
+* Learn to launch and configure Amazon EC2 compute instances.
+* Attach permissions to EC2 instances using IAM Roles.
+* Deploy static web pages utilizing Amazon S3 Web Hosting.
+* Setup relational databases with Amazon RDS.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| Monday | Complete "Networking Essentials with Amazon VPC" - Provision VPC, Subnets, Route Tables, and Internet Gateway. | 12/05/2026 | 12/05/2026 | VPC Lab Guide |
+| Tuesday | Complete "Compute Essentials with Amazon EC2" - Launch a Linux EC2 instance and SSH into it. | 13/05/2026 | 13/05/2026 | EC2 Lab Guide |
+| Wednesday | Complete "Instance Profiling with IAM Roles for EC2" - Attach IAM Role allowing S3 access to EC2. | 14/05/2026 | 14/05/2026 | IAM Role Lab Guide |
+| Thursday | Complete "Static Website Hosting with Amazon S3" - Enable S3 web hosting and upload index.html files. | 15/05/2026 | 16/05/2026 | S3 Hosting Guide |
+| Friday | Complete "Database Essentials with Amazon RDS" - Provision an RDS MySQL database instance. | 16/05/2026 | 16/05/2026 | RDS MySQL Lab Guide |
 
 ### Week 2 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Configured isolated network subnets with customized routing rules inside VPC.
+* Deployed EC2 instances, managing secure traffic via Security Groups.
+* Assigned IAM instance profiles to EC2, bypassing the need for embedded keys.
+* Successfully hosted frontend web layouts on Amazon S3.
+* Established RDS database instance accessible to application servers.

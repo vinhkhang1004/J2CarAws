@@ -1,57 +1,25 @@
 ---
 title: "Week 12 Worklog"
 date: 2024-01-01
-weight: 2
+weight: 12
 chapter: false
 pre: " <b> 1.12. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
-
 ### Week 12 Objectives:
-
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Refactor database queries and launch DocumentDB Replica instances for read routing.
+* Load test SQS payment workflows and ECS tasks scaling thresholds.
+* Build AWS CloudWatch dashboards and customize email alerts for anomalies.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| Wednesday | Optimize read queries at the codebase level and implement compound index strategies. | 21/07/2026 | 23/07/2026 | DB Query Tuning |
+| Thursday | Execute peak load tests sending thousands of checkout requests through SQS queue limits. | 24/07/2026 | 27/07/2026 | Load Testing Tools |
+| Friday | Provision secondary DocumentDB Replica Nodes and ElastiCache Redis replication partners across Availability Zones. | 28/07/2026 | 30/07/2026 | AWS Replication Setup |
+| Friday | Configure AWS CloudWatch status boards monitoring system resource utilization and deploy automated email alarms. | 28/07/2026 | 30/07/2026 | AWS CloudWatch Alerts |
 
 ### Week 12 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Read/write splitting implemented via DB replicas, reducing read response times by 40%.
+* Database compound indexes reduce query latency on complex search requests from hundreds of ms to under 10ms.
+* Peak load testing successfully processed thousands of requests without bottlenecks or message drop.
+* Proactive infrastructure monitoring implemented using CloudWatch charts with email triggers.

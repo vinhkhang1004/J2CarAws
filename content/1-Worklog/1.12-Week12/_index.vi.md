@@ -1,58 +1,25 @@
 ---
 title: "Worklog Tuần 12"
 date: 2024-01-01
-weight: 2
+weight: 12
 chapter: false
-pre: " <b> 1.12 </b> "
+pre: " <b> 1.12. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 ### Mục tiêu tuần 12:
-
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tối ưu hóa truy vấn MongoDB và cấu hình Replica Instances giảm tải đọc cho Database.
+* Đo lường hiệu năng chịu tải hệ thống thanh toán qua SQS.
+* Thiết lập AWS CloudWatch dashboard theo dõi tài nguyên và cảnh báo tự động về Email.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| Thứ 4 | Tối ưu hóa các truy vấn tìm kiếm bằng cách thêm chỉ mục phức hợp (Compound Index) trên DocumentDB. | 21/07/2026 | 23/07/2026 | DB Query Tuning |
+| Thứ 5 | Kiểm thử đo lường hiệu năng (Load Testing) hệ thống khi có hàng ngàn đơn hàng thanh toán qua SQS. | 24/07/2026 | 27/07/2026 | Load Testing Tools |
+| Thứ 6 | Thiết lập DocumentDB Replica Node (Private Subnet 4) và Redis Replica Node để đồng bộ hóa và phân chia truy vấn đọc. | 28/07/2026 | 30/07/2026 | AWS Replication Setup |
+| Thứ 6 | Tạo Dashboard trên AWS CloudWatch để giám sát CPU, RAM, Network I/O và cấu hình cảnh báo tự động về Email quản trị. | 28/07/2026 | 30/07/2026 | AWS CloudWatch Alerts |
 
 ### Kết quả đạt được tuần 12:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Tách biệt luồng Đọc/Ghi cơ sở dữ liệu giúp tốc độ đọc tải trang tăng 40% nhờ Replica Nodes.
+* Compound Indexes giúp giảm thời gian query từ hàng trăm ms xuống dưới 10ms.
+* Hệ thống xử lý thành công tải đỉnh với hàng ngàn tin nhắn SQS mà không gặp lỗi nghẽn cổ chai.
+* Giám sát hệ thống chủ động thông qua AWS CloudWatch Dashboard và Email cảnh báo tự động.

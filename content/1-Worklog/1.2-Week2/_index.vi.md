@@ -1,59 +1,30 @@
 ---
 title: "Worklog Tuần 2"
 date: 2024-01-01
-weight: 1
+weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 2:
-
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tìm hiểu và thiết lập mạng ảo Amazon VPC (Virtual Private Cloud).
+* Thực hành tạo và quản lý máy chủ EC2 (Elastic Compute Cloud).
+* Thiết lập quyền truy cập cho EC2 qua IAM Roles.
+* Tạo và lưu trữ mã nguồn web tĩnh bằng Amazon S3 Static Website Hosting.
+* Khởi tạo cơ sở dữ liệu quan hệ với Amazon RDS (Relational Database Service).
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| Thứ 2 | Thực hành bài Lab "Networking Essentials with Amazon VPC" - Tạo VPC, Subnets, Route Tables, Internet Gateway. | 12/05/2026 | 12/05/2026 | VPC Lab Guide |
+| Thứ 3 | Thực hành bài Lab "Compute Essentials with Amazon EC2" - Khởi tạo EC2 instance Linux và SSH từ máy cá nhân. | 13/05/2026 | 13/05/2026 | EC2 Lab Guide |
+| Thứ 4 | Thực hành bài Lab "Instance Profiling with IAM Roles for EC2" - Tạo IAM Role cấp quyền gọi S3 và gắn vào EC2. | 14/05/2026 | 14/05/2026 | IAM Role Lab Guide |
+| Thứ 5 | Thực hành bài Lab "Static Website Hosting with Amazon S3" - Tạo S3 bucket, upload file index.html và cấu hình hosting. | 15/05/2026 | 16/05/2026 | S3 Hosting Guide |
+| Thứ 6 | Thực hành bài Lab "Database Essentials with Amazon RDS" - Khởi tạo cụm database RDS MySQL trong subnet. | 16/05/2026 | 16/05/2026 | RDS MySQL Lab Guide |
 
 ### Kết quả đạt được tuần 2:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Thiết lập thành công VPC cô lập với các dải phân vùng mạng con Public/Private.
+* Vận hành máy chủ EC2, kiểm soát lưu lượng truy cập inbound/outbound qua Security Groups.
+* Gắn IAM Roles cho EC2 giúp ứng dụng truy cập S3 an toàn không cần hard-code credentials.
+* Triển khai trang web tĩnh HTML/CSS trên S3 thành công.
+* Kết nối thành công tới database RDS từ EC2 instance nội bộ.

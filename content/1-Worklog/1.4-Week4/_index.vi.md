@@ -1,59 +1,30 @@
 ---
 title: "Worklog Tuần 4"
 date: 2024-01-01
-weight: 1
+weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 4:
-
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tìm hiểu giải pháp tự động co giãn tài nguyên EC2 Auto Scaling và Application Load Balancer.
+* Quản lý tên miền và cấu hình bản ghi DNS với Amazon Route 53.
+* Thiết lập đường truyền nội bộ bảo mật kết nối S3 qua VPC Gateway Endpoints.
+* Bảo vệ ứng dụng biên trước tấn công độc hại bằng AWS WAF.
+* Quản lý và bảo mật chuỗi kết nối cơ sở dữ liệu qua AWS Secrets Manager.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| Thứ 2 | Thực hành bài Lab "Scaling Applications with EC2 Auto Scaling" và Application Load Balancer (ALB). | 26/05/2026 | 26/05/2026 | Auto Scaling Guide |
+| Thứ 3 | Thực hành bài Lab "Hybrid DNS Management with Amazon Route 53" - Tạo private hosted zone, cấu hình record DNS. | 27/05/2026 | 27/05/2026 | Route 53 Documentation |
+| Thứ 4 | Thực hành bài Lab "Private Access to S3 with VPC Endpoints" - Cấu hình VPC Endpoint trỏ tới S3 từ Private Subnet. | 28/05/2026 | 28/05/2026 | S3 Endpoint Lab Guide |
+| Thứ 5 | Thực hành bài Lab "Application Protection with AWS WAF" - Viết Web ACL chặn IP và lọc request SQLi, XSS. | 29/05/2026 | 29/05/2026 | AWS WAF Lab Guide |
+| Thứ 6 | Thực hành bài Lab "Credentials Management with AWS Secrets Manager" - Tạo secret lưu URI và cấu hình xoay khóa tự động. | 30/05/2026 | 30/05/2026 | Secrets Manager Guide |
 
 ### Kết quả đạt được tuần 4:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Cấu hình thành công Auto Scaling Group tự co giãn dựa trên mức tải CPU thực tế.
+* Thiết lập DNS phân giải tên miền thông suốt qua Route 53.
+* Kết nối nội bộ ECS sang S3 không mất phí NAT Gateway nhờ VPC Gateway Endpoint.
+* Triển khai Web ACL chặn đứng các cuộc tấn công SQL Injection và XSS phổ biến.
+* Mã hóa và lưu trữ an toàn các biến môi trường nhạy cảm trong Secrets Manager.

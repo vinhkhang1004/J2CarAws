@@ -1,59 +1,27 @@
 ---
 title: "Worklog Tuần 9"
 date: 2024-01-01
-weight: 1
+weight: 9
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-
 ### Mục tiêu tuần 9:
-
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Đóng gói ứng dụng NodeJS Express bằng Dockerfile tối ưu dung lượng.
+* Cấu hình ECS Task Definitions, chạy cluster service trên AWS Fargate.
+* Thiết lập Application Load Balancer (ALB) hỗ trợ Sticky Sessions.
+* Thiết lập Auto Scaling và NAT Gateways chịu lỗi cao.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| Thứ 2 | Viết Dockerfile sử dụng multi-stage build để tối thiểu dung lượng container image cho Backend Express. | 30/06/2026 | 30/06/2026 | Docker Guide |
+| Thứ 3 | Đẩy Docker image lên Amazon ECR và viết tệp cấu hình ECS Task Definitions (CPU, RAM, ENV Variables). | 01/07/2026 | 01/07/2026 | AWS ECR & Task Definitions |
+| Thứ 4 | Cấu hình Application Load Balancer (ALB) hỗ trợ Sticky Sessions để Socket.io hoạt động ổn định. | 02/07/2026 | 03/07/2026 | AWS ALB Documentation |
+| Thứ 5 | Triển khai dịch vụ ECS, chạy 2 Tasks Backend NodeJS ở Private Subnet 1 và Private Subnet 2 trên 2 AZs khác nhau. | 03/07/2026 | 04/07/2026 | AWS ECS Fargate Deploy |
+| Thứ 6 | Thiết lập chính sách ECS Auto Scaling (scale-out khi CPU > 70%) và cấu hình 2 NAT Gateways phục vụ outbound traffic. | 04/07/2026 | 04/07/2026 | AWS NAT Gateway & Scaling |
 
 ### Kết quả đạt được tuần 9:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Container Backend được đóng gói nhỏ gọn (< 150MB) và lưu trữ bảo mật trên ECR.
+* Ứng dụng chạy trên Amazon ECS Fargate không máy chủ (Serverless Container), dễ bảo trì và vận hành.
+* Load Balancer điều phối tải thông minh, giữ kết nối chat realtime ổn định nhờ Sticky Sessions.
+* Outbound traffic (gửi mail, cổng thanh toán) chạy an toàn từ Private Subnets qua NAT Gateways.

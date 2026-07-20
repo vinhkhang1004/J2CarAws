@@ -1,57 +1,26 @@
 ---
 title: "Week 10 Worklog"
 date: 2024-01-01
-weight: 2
+weight: 10
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
-
 ### Week 10 Objectives:
-
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Compile React SPA code and upload static files to S3 Web Bucket.
+* Set up Amazon CloudFront CDN distribution to optimize global static content delivery.
+* Configure strict CORS parameters on the Express Backend.
+* Set up ACM SSL/TLS certificates and configure AWS WAF rules to protect endpoints.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| Monday | Build React SPA to static assets and upload to S3 Web Bucket with Static Hosting mode active. | 07/07/2026 | 07/07/2026 | React Build & S3 Hosting |
+| Tuesday | Update CORS variables on the Express backend server to accept requests only from the official domain. | 08/07/2026 | 08/07/2026 | Express CORS Docs |
+| Wednesday | Generate ACM SSL certificate and create Amazon CloudFront CDN Distribution referencing S3 Bucket. | 09/07/2026 | 10/07/2026 | AWS ACM & CloudFront |
+| Thursday | Provision AWS WAF Web ACL rules in front of CloudFront CDN and ALB. | 10/07/2026 | 11/07/2026 | AWS WAF Ruleset |
+| Friday | Configure security rules against SQL Injection, XSS exploits, and DDoS vectors. | 11/07/2026 | 11/07/2026 | OWASP Top 10 WAF |
 
 ### Week 10 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* React SPA client assets hosted on S3 and distributed via CloudFront CDN distribution with minimal load time.
+* HTTPS transport encryption applied across all user-facing domain routes.
+* AWS WAF acts as an edge shield, intercepting malicious requests, automated scans, XSS, and SQLi attempts.

@@ -1,57 +1,30 @@
 ---
 title: "Week 5 Worklog"
 date: 2024-01-01
-weight: 1
+weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 5 Objectives:
-
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Deploy serverless automation logic utilizing AWS Lambda.
+* Establish message brokers using Amazon SQS queues and SNS topics.
+* Package applications inside Docker container images.
+* Orchestrate application containers using Amazon ECS and AWS Fargate.
+* **AWS HCMC Office On-Site (07/06/2026)**: Attend advanced training covering advanced IAM Policies, Cognito identity security, and cross-account access controls.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| Monday | Complete "Serverless Automation with AWS Lambda" - Setup Node.js lambda execution triggers. | 02/06/2026 | 02/06/2026 | AWS Lambda Guide |
+| Tuesday | Complete "Messaging Systems with SQS and SNS" - Setup buffer queues and messaging topics. | 03/06/2026 | 03/06/2026 | SQS/SNS Lab Guide |
+| Wednesday | Complete Docker basics - Construct Dockerfiles, compile images, and verify container runs locally. | 04/06/2026 | 04/06/2026 | Docker Documentation |
+| Thursday | Complete "Container Orchestration with Amazon ECS and AWS Fargate" - Launch serverless container tasks. | 05/06/2026 | 05/06/2026 | Amazon ECS Guide |
+| Sunday | **AWS HCMC Office Visit (07/06/2026)**: Participate in advanced HCMC office training covering IAM policies and Cognito identity authentication. | 07/06/2026 | 07/06/2026 | AWS HCMC Office Session |
 
 ### Week 5 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Developed serverless event-driven NodeJS handlers inside Lambda.
+* Decoupled system modules using SQS queue buffers.
+* Packaged backend services into Docker runtime images.
+* Deployed container workloads on ECS Fargate serverless infrastructure.
+* Completed AWS office session covering Cognito authentication and strict IAM permission models (matches Image 2).

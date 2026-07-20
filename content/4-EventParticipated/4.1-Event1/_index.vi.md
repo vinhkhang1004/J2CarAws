@@ -1,125 +1,100 @@
 ---
-title: "Event 1"
-date: 2024-01-01
+title: "AWS Community Day Vietnam 2026"
+date: 2026-05-23
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+# Báo cáo thu hoạch: AWS Community Day Vietnam 2026
 
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+### Thông tin sự kiện
+* **Tên sự kiện:** AWS Community Day Vietnam 2026
+* **Thời gian:** 23/05/2026 (08:00 - 17:00)
+* **Địa điểm:** Thành phố Hồ Chí Minh, Việt Nam
+* **Vai trò:** Người tham dự
+
+---
 
 ### Mục Đích Của Sự Kiện
+AWS Community Day là sự kiện công nghệ quy mô lớn được tổ chức bởi cộng đồng người dùng AWS (AWS User Group Vietnam). Mục đích chính của sự kiện nhằm:
+* Chia sẻ các xu hướng công nghệ mới nhất trong hệ sinh thái điện toán đám mây AWS, đặc biệt là các giải pháp Generative AI (GenAI), Serverless và Kiến trúc ứng dụng hiện đại.
+* Kết nối các kỹ sư, chuyên gia kiến trúc giải pháp (SA), các Community Builders và cộng đồng doanh nghiệp công nghệ tại Việt Nam.
+* Giới thiệu các bài học thực tiễn (Best Practices), case-study chuyển đổi số và tối ưu hóa chi phí vận hành đám mây từ các doanh nghiệp lớn (GoTymeX, VPBank, Cloud Kinetics...).
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+---
 
-### Danh Sách Diễn Giả
+### Tóm Tắt Nội Dung Các Bài Thuyết Trình Nổi Bật
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+#### 1. Context Is Everything - Making AI Actually Work for You
+* **Diễn giả:** Anh Tịnh Trương (Platform Engineer, GoTymeX)
+* **Nội dung chính:**
+  * Chỉ ra vấn đề cốt lõi khiến các ứng dụng AI thường xuyên bị ảo giác (hallucination) không phải do mô hình LLM yếu, mà do thiếu ngữ cảnh cụ thể (Context).
+  * Giới thiệu kiến trúc "Prompt to Memory Pipeline" - cách thức xây dựng hệ thống ngữ cảnh động (dynamic context injection) và cơ chế lưu trữ bộ nhớ dài hạn cho AI.
+  * Chia sẻ tư duy làm việc phối hợp với AI và định hướng phát triển kỹ năng cho các bạn sinh viên, kỹ sư trẻ trong kỷ nguyên AI.
 
-### Nội Dung Nổi Bật
+#### 2. Friendly AI Assistant w/ Amazon Quick
+* **Diễn giả:** Chị Phạm Ngọc Hải Anh (G-AsiaPacific Vietnam, AWS Community Builder)
+* **Nội dung chính:**
+  * Phân tích nỗi đau của doanh nghiệp: Người dùng tốn quá nhiều thời gian để tra cứu dữ liệu từ nhiều nguồn phân mảnh khác nhau.
+  * Giới thiệu giải pháp trợ lý ảo doanh nghiệp "Amazon Quick" được phát triển dựa trên Amazon Bedrock, tích hợp hơn 40 cổng kết nối dữ liệu bảo mật (databases) và khả năng tìm kiếm web thông minh.
+  * Case study thực tế: Trợ lý ảo cho Quản trị dự án (PM) tự động tạo Biên bản họp (Minutes of Meeting - MoM), gửi email nhắc lịch và đồng bộ tiến độ của lập trình viên.
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+#### 3. From Edge to Origin: CloudFront as Your Foundation
+* **Diễn giả:** Anh Nguyễn Tuấn Thịnh (DevOps Engineer, First Cloud AI Journey)
+* **Nội dung chính:**
+  * Giải quyết bài toán tối ưu chi phí CDN truyền thống (tránh hiện tượng chi phí tăng đột biến không dự đoán được).
+  * Giới thiệu mô hình CDN gói cước cố định (Fixed-price CDN) kết hợp Amazon CloudFront, AWS WAF, Route 53 và gói lưu trữ S3.
+  * Phân tích các tính năng nâng cao: Bảo mật biên (AWS Shield, WAF, Mutual TLS, chặn địa lý), tự động chuyển vùng chịu lỗi (Origin failover), hỗ trợ giao thức HTTP/3 (QUIC) và tùy biến logic tại vùng biên thông qua CloudFront Functions và Lambda@Edge.
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+#### 4. 36 hrs with LotusHacks: Building UTMorpho from Idea to Reality
+* **Đại diện đội thi:** UTMorpho Team (Thành viên tham dự LotusHacks 2026)
+* **Nội dung chính:**
+  * Chia sẻ hành trình 36 giờ thiết kế và phát triển ứng dụng Generative Design "UTMorpho" tại cuộc thi LotusHacks.
+  * Sơ đồ kiến trúc ứng dụng: Frontend viết bằng React SPA triển khai qua CloudFront + S3; Backend sử dụng API Gateway + Lambda kết nối lưu trữ DynamoDB; Engine GenAI cốt lõi dùng Amazon Bedrock để phân tích bản phác thảo hình ảnh, tự động thiết kế giao diện UI và stream code hiển thị live preview.
+  * Bài học về xử lý lỗi mô hình AI sinh dư thừa (overgeneration), vượt giới hạn token và cách quản lý áp lực thời gian.
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+#### 5. Non-Determinism of 'Deterministic' LLM Settings
+* **Diễn giả:** Anh Đức Đào (Solution Architect, Cloud Kinetics)
+* **Nội dung chính:**
+  * Phân tích thực tế: Dù cấu hình tham số `temperature = 0` trên các API LLM thương mại, kết quả trả về vẫn không hoàn toàn đồng nhất (Non-deterministic).
+  * Nguyên nhân kỹ thuật: Do tính chất không kết hợp của phép toán số thực dấu phẩy động trên GPU (floating-point arithmetic) khi tính toán song song, kết hợp cơ chế gom cụm yêu cầu động (dynamic request batching) trên hệ thống inference thương mại.
+  * Giải pháp khắc phục: Sử dụng cơ chế bầu chọn đa số (Majority Voting), tự host mô hình riêng với cấu hình deterministic chặt chẽ, và định dạng kết quả đầu ra (JSON Mode / Regex Grammar).
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+#### 6. Enterprise-Grade Multi-Agent System: The Case of Startup Credit Scoring
+* **Diễn giả:** Chị Vy Lâm (Senior Business Systems Analyst, VPBank)
+* **Nội dung chính:**
+  * Giải quyết khó khăn trong đánh giá điểm tín dụng doanh nghiệp khởi nghiệp (startups) khi thiếu dữ liệu lịch sử tài chính truyền thống.
+  * Hạn chế của hệ thống Single-Agent: Dễ bị nghẽn ngữ cảnh, sai sót cao khi xử lý tác vụ phức tạp.
+  * Đề xuất mô hình "Ủy ban tín dụng ảo" (Virtual Credit Committee) sử dụng hệ thống Multi-Agent (Manager, Financial Analyst, Team Evaluator, Risk Assessor...) phối hợp đưa ra quyết định đánh giá đồng thuận.
+  * Hiệu năng: Tốc độ xử lý hồ sơ giảm từ vài tuần xuống còn vài giờ (nhanh hơn 95%), giảm 95% thời gian phân tích thủ công và mang lại tỷ lệ ROI cao.
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+---
 
-#### Domain-Driven Design (DDD)
+### Những Bài Học Rút Ra & Trải Nghiệm Thực Tế
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+#### 1. Tư Duy Thiết Kế Kiến Trúc
+* **Hạ tầng bảo mật & tối ưu chi phí:** CloudFront không chỉ đóng vai trò phân phối nội dung (CDN) đơn thuần mà là một lớp phòng vệ biên thiết yếu cho ứng dụng. Việc cấu hình đúng VPC Gateway Endpoint cho S3 hay sử dụng CDN tối ưu hóa chi phí giúp tiết kiệm tài nguyên rất lớn cho dự án.
+* **Tiếp cận Business-First:** Mọi giải pháp công nghệ, đặc biệt là tích hợp AI, đều phải xuất phát từ nhu cầu thực tiễn của doanh nghiệp để tối ưu quy trình vận hành và mang lại giá trị ROI thực sự, chứ không chỉ ứng dụng công nghệ theo xu hướng.
 
-#### Event-Driven Architecture
+#### 2. Kiến Thức GenAI Chuyên Sâu
+* **Nắm bắt hạn chế của LLM:** Hiểu rõ hiện tượng Non-determinism giúp chuẩn bị các phương án dự phòng khi thiết kế API tích hợp AI, tránh tin tưởng tuyệt đối vào kết quả đầu ra.
+* **Xu hướng Multi-Agent:** Chuyển dịch từ việc dùng một chatbot đơn lẻ sang phối hợp nhiều AI Agent có vai trò chuyên biệt là chìa khóa để giải quyết các bài toán phức tạp quy mô doanh nghiệp.
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
+---
 
-#### Compute Evolution
+### Ứng Dụng Thực Tế Vào Dự Án NodeJ2Car
+Kiến thức thu nhận từ sự kiện đã được tôi áp dụng trực tiếp vào việc thiết kế và triển khai backend cho dự án **NodeJ2Car**:
+1. **Kiến trúc bảo mật biên & CloudFront:** Triển khai React Frontend trên S3 và phân phối qua CloudFront CDN kết hợp AWS WAF và SSL/TLS (ACM) theo mô hình tối ưu hóa bảo mật và tốc độ đã học được ở Tuần 10.
+2. **Xử lý bất đồng bộ chịu tải cao:** Áp dụng mô hình tách biệt kết nối (decoupling) sử dụng hàng đợi Amazon SQS ở Tuần 8 để nhận log hóa đơn từ Webhook Lambda, tránh nghẽn máy chủ chính Express tương tự giải pháp xử lý giao dịch quy mô lớn của AWS.
+3. **Tối ưu hóa chức năng AI Scan Image:** Áp dụng phương pháp phân tích từ khóa và kiểm soát định dạng đầu ra cho chức năng quét ảnh phụ tùng ô tô để hạn chế sai sót từ mô hình AI ở Tuần 6.
 
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
+---
 
-#### Amazon Q Developer
+### Trải Nghiệm Cá Nhân
+AWS Community Day Vietnam 2026 mang lại một bầu không khí học tập vô cùng sôi động và nhiệt huyết. Việc được lắng nghe chia sẻ từ các chuyên gia đầu ngành giúp tôi củng cố và mở rộng vốn kiến thức của mình, đồng thời tạo cơ hội kết nối (networking) với những người bạn cùng chung đam mê công nghệ Cloud & AI. Sự kiện đã truyền cảm hứng lớn cho tôi trong suốt chặng đường thực tập tại đơn vị.
 
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+---
 
-### Những Gì Học Được
-
-#### Tư Duy Thiết Kế
-
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
-
-#### Kiến Trúc Kỹ Thuật
-
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
-
-#### Chiến Lược Hiện Đại Hóa
-
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
-
-### Ứng Dụng Vào Công Việc
-
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
-
-### Trải nghiệm trong event
-
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
-
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
-
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
-
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
-
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
-
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
-
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+### Ảnh minh chứng sự kiện
+![AWS Community Day Vietnam 2026 Presentation](/images/4-EventParticipated/event1.jpg)
