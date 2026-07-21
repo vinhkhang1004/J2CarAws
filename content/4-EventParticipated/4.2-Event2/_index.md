@@ -1,6 +1,6 @@
 ---
 title: "Swinburne Cloud Mastery 2026"
-date: 2026-07-11
+date: 2026-07-04
 weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
@@ -10,8 +10,8 @@ pre: " <b> 4.2. </b> "
 
 ### Event Information
 * **Event Name:** Swinburne Cloud Mastery 2026
-* **Date & Time:** July 11, 2026 (08:30 - 12:00)
-* **Location:** Swinburne Vietnam HCMC Campus, A35 Bạch Đằng Street, Tân Bình District, Ho Chi Minh City, Vietnam
+* **Date & Time:** July 4, 2026 (09:00 - 12:00)
+* **Location:** Bitexco Financial Tower, District 1, Ho Chi Minh City, Vietnam
 * **Role:** Attendee
 
 ---
