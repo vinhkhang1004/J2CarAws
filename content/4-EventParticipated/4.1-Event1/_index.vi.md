@@ -10,8 +10,8 @@ pre: " <b> 4.1. </b> "
 
 ### Thông tin sự kiện
 * **Tên sự kiện:** AWS Community Day Vietnam 2026
-* **Thời gian:** 23/05/2026 (08:00 - 17:00)
-* **Địa điểm:** Thành phố Hồ Chí Minh, Việt Nam
+* **Thời gian:** 23/05/2026 (09:00 - 12:00)
+* **Địa điểm:** Bitexco Financial Tower, Quận 1, Thành phố Hồ Chí Minh, Việt Nam
 * **Vai trò:** Người tham dự
 
 ---
