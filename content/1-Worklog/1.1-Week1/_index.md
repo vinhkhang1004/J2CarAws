@@ -16,11 +16,11 @@ pre: " <b> 1.1. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| Monday | Register account on HCM Portal, update personal profile to prepare for office visits. | 05/05/2026 | 05/05/2026 | HCM Portal Guide |
-| Tuesday | Complete the 5 onboarding tasks from the organizing committee to receive $100 AWS credits. | 06/05/2026 | 06/05/2026 | Workforce Program Docs |
-| Wednesday | Study AWS service architecture icons and practice designing basic diagrams on draw.io. | 07/05/2026 | 07/05/2026 | AWS Architecture Icons |
-| Thursday | Register a personal AWS account and configure AWS Budgets to alert via email when costs exceed limits. | 08/05/2026 | 08/05/2026 | AWS Budgets Guide |
-| Friday | Study AWS IAM service, create IAM Users, Groups, and attach basic IAM Policies. | 09/05/2026 | 09/05/2026 | AWS IAM Guide |
+| Tuesday | Register account on HCM Portal, update personal profile to prepare for office visits. | 05/05/2026 | 05/05/2026 | HCM Portal Guide |
+| Wednesday | Complete the 5 onboarding tasks from the organizing committee to receive $100 AWS credits. | 06/05/2026 | 06/05/2026 | Workforce Program Docs |
+| Thursday | Study AWS service architecture icons and practice designing basic diagrams on draw.io. | 07/05/2026 | 07/05/2026 | AWS Architecture Icons |
+| Friday | Register a personal AWS account and configure AWS Budgets to alert via email when costs exceed limits. | 08/05/2026 | 08/05/2026 | AWS Budgets Guide |
+| Saturday | Study AWS IAM service, create IAM Users, Groups, and attach basic IAM Policies. | 09/05/2026 | 09/05/2026 | AWS IAM Guide |
 
 ### Week 1 Achievements:
 * Onboarding details and portal account registration completed successfully.

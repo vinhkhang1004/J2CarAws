@@ -16,11 +16,11 @@ pre: " <b> 1.1. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| Thứ 2 | Đăng ký tài khoản tại HCM Portal, cập nhật thông tin cá nhân và hồ sơ chuẩn bị cho các buổi lên văn phòng. | 05/05/2026 | 05/05/2026 | Hướng dẫn HCM Portal |
-| Thứ 3 | Thực hiện 5 nhiệm vụ khởi động (onboarding tasks) của ban tổ chức để nhận credit hỗ trợ thực hành $100 AWS. | 06/05/2026 | 06/05/2026 | Tài liệu Workforce Program |
-| Thứ 4 | Tìm hiểu các ký hiệu biểu tượng (icons) dịch vụ AWS và thực hành thiết kế sơ đồ kiến trúc draw.io cơ bản. | 07/05/2026 | 07/05/2026 | AWS Architecture Icons |
-| Thứ 5 | Đăng ký tài khoản AWS và cấu hình AWS Budgets gửi cảnh báo qua email khi chi phí vượt quá ngưỡng tự đặt. | 08/05/2026 | 08/05/2026 | AWS Budgets User Guide |
-| Thứ 6 | Tìm hiểu dịch vụ AWS IAM, tạo IAM Users, Groups và phân quyền bằng IAM Policies cơ bản. | 09/05/2026 | 09/05/2026 | AWS IAM Guide |
+| Thứ 3 | Đăng ký tài khoản tại HCM Portal, cập nhật thông tin cá nhân và hồ sơ chuẩn bị cho các buổi lên văn phòng. | 05/05/2026 | 05/05/2026 | Hướng dẫn HCM Portal |
+| Thứ 4 | Thực hiện 5 nhiệm vụ khởi động (onboarding tasks) của ban tổ chức để nhận credit hỗ trợ thực hành $100 AWS. | 06/05/2026 | 06/05/2026 | Tài liệu Workforce Program |
+| Thứ 5 | Tìm hiểu các ký hiệu biểu tượng (icons) dịch vụ AWS và thực hành thiết kế sơ đồ kiến trúc draw.io cơ bản. | 07/05/2026 | 07/05/2026 | AWS Architecture Icons |
+| Thứ 6 | Đăng ký tài khoản AWS và cấu hình AWS Budgets gửi cảnh báo qua email khi chi phí vượt quá ngưỡng tự đặt. | 08/05/2026 | 08/05/2026 | AWS Budgets User Guide |
+| Thứ 7 | Tìm hiểu dịch vụ AWS IAM, tạo IAM Users, Groups và phân quyền bằng IAM Policies cơ bản. | 09/05/2026 | 09/05/2026 | AWS IAM Guide |
 
 ### Kết quả đạt được tuần 1:
 * Đăng ký thành công tài khoản portal và hoàn tất thông tin lên văn phòng.
