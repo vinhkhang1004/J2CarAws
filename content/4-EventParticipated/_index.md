@@ -22,9 +22,9 @@ During my internship, I participated in two events. Each one was a memorable exp
 ### [Event 1](4.1-Event1/)  
 &emsp;**Event Name:** AWS Community Day Vietnam 2026  
 
-&emsp;**Date & Time:** May 23, 2026  
+&emsp;**Date & Time:** May 23, 2026 (09:00 - 12:00)  
 
-&emsp;**Location:** Ho Chi Minh City, Vietnam  
+&emsp;**Location:** Bitexco Financial Tower, District 1, Ho Chi Minh City, Vietnam  
 
 &emsp;**Role:** Attendee  
 
@@ -33,8 +33,8 @@ During my internship, I participated in two events. Each one was a memorable exp
 ### [Event 2](4.2-Event2/)  
 &emsp;**Event Name:** Swinburne Cloud Mastery 2026  
 
-&emsp;**Date & Time:** July 11, 2026 (08:30 - 12:00)  
+&emsp;**Date & Time:** July 4, 2026 (09:00 - 12:00)  
 
-&emsp;**Location:** Swinburne Vietnam HCMC Campus, A35 Bạch Đằng Street, Tân Bình District, Ho Chi Minh City  
+&emsp;**Location:** Bitexco Financial Tower, District 1, Ho Chi Minh City, Vietnam  
 
 &emsp;**Role:** Attendee  

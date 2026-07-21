@@ -23,9 +23,9 @@ Trong quá trình thực tập, em đã tham gia 2 events, với mỗi event là
 ### [Event 1](4.1-Event1/)
 &emsp;**Tên sự kiện:** AWS Community Day Vietnam 2026
 
-&emsp;**Thời gian:** 23/05/2026
+&emsp;**Thời gian:** 23/05/2026 (09:00 - 12:00)
 
-&emsp;**Địa điểm:** Thành phố Hồ Chí Minh, Việt Nam
+&emsp;**Địa điểm:** Bitexco Financial Tower, Quận 1, Thành phố Hồ Chí Minh, Việt Nam
 
 &emsp;**Vai trò trong sự kiện:** Người tham dự
 
@@ -34,9 +34,9 @@ Trong quá trình thực tập, em đã tham gia 2 events, với mỗi event là
 ### [Event 2](4.2-Event2/)
 &emsp;**Tên sự kiện:** Swinburne Cloud Mastery 2026
 
-&emsp;**Thời gian:** 11/07/2026 (08:30 - 12:00)
+&emsp;**Thời gian:** 04/07/2026 (09:00 - 12:00)
 
-&emsp;**Địa điểm:** Campus Swinburne Việt Nam TP.HCM, A35 Đường Bạch Đằng, Quận Tân Bình, Thành phố Hồ Chí Minh
+&emsp;**Địa điểm:** Bitexco Financial Tower, Quận 1, Thành phố Hồ Chí Minh, Việt Nam
 
 &emsp;**Vai trò trong sự kiện:** Người tham dự
 
